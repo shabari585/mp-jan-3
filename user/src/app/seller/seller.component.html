@@ -1,0 +1,770 @@
+<app-header></app-header>    
+<app-header1></app-header1> 
+        <!-- <div class="custom-order-div-back">
+            <div class="custom-order-core">
+              <div class="custom-order-req">
+                <h4 id="cust-order-head">Custom Order Request</h4>
+                <i class="fa fa-times" id="custom-order-close-btn" aria-hidden="true" (click)='closeCustOrder()'></i>
+              </div>
+              <div class="custom-order-main">
+                <span class="cust-words">What are you looking for ?</span><br>
+                <textarea id="custom-order-desc" [(ngModel)]="order_description"></textarea><br>
+                <input type="file" id="custom-order-file" name="custom-order-files" (change)="fileChange($event)" accept=".jpg,.png">
+                <span style="position:relative; display:block;height:auto;width:100%;text-align:right !important; color:#0192b5;padding-right:10px;"><label for="custom-order-file"><span style="cursor:pointer !important">Attach image</span></label>
+                </span><br>
+                <span class="cust-words">When do you need it? <span style="color:rgba(0,0,0,0.4);font-size:80%;">(Optional)</span></span><br>
+                <input type="text" id="custom-order-date" [(ngModel)]="cus_delivery_date"><br>
+              </div>
+              <div class="cust-submit-div">
+                <button id="cust-submit" (click)="post_custom_order()">Send Custom Request</button>
+              </div>
+            </div>
+          </div> -->
+
+
+
+          <!--<div class="seller-profile-container">-->
+
+
+
+
+          <!-- <div class="seller-cover-pic">
+              <div class="center">
+              </div>
+          </div>
+          <div id="d-dark-back">
+            <div id="ab-sh-more-div"><span id="ab-close-btn">x</span>
+              <p>
+              </p>
+            </div>
+          </div>
+          <div class="seller-core-container w-control">
+            <div class="seller-left">
+              <div class="seller-profile-pic-main"><img src="http://localhost:3000{{profile_pic}}" class="seller-pic"></div>
+              <div class="seller-profile-icons">
+                <table>
+                  <tr>
+                    <td><i class="fa fa-globe" aria-hidden="true" style="margin-right:10px;"></i>From :{{country}} , {{city}}
+                    </td>
+                  </tr>
+                    <tr>
+                      <td><i class="fa fa-clock-o" aria-hidden="true" style="margin-right:10px;"></i>Member Since: {{join_date}}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><i class="fa fa-check-circle-o" aria-hidden="true" style="margin-right:10px;"></i>Email :{{email}}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><i class="fa fa-comments-o" aria-hidden="true" style="margin-right:10px;"></i>Speaks : English</td>
+                    </tr>
+                </table>
+              </div>
+            </div>
+            <div class="seller-middle">
+              <h2>Hey, I'm {{first_name}} {{last_name}}
+              </h2>
+              <h3>
+                {{designation}}
+              </h3>
+              <p>
+                 {{description}}
+              </p>
+                <p><a id="sh-more">Show more</a></p>
+                  <div id="s-middle-bottom">
+                    <table>
+                      <tr>
+                        <td>
+                          <span class="s-m-b-all">
+                            <span class="s-m-b-num">
+                              {{comp_jobs_num}}
+                            </span>
+                          <br>
+                          <span class="bold">Jobs Done</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="s-m-b-all">
+                            <span class="s-m-b-num">
+                              {{f_rev_len}}
+                            </span>
+                          <br>
+                          <span class="bold">Reviews</span>
+                          </span>
+                        </td>
+                        <td id="no-b">
+                          <span class="s-m-b-all">
+                    <span class="s-m-b-num">
+                     <span style="font-size:50%;">$</span>{{f_total_earnings}}
+                          </span>
+                          <br>
+                          <span class="bold">Earned</span>
+                          </span>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+            </div>
+            <div class="seller-right">
+              <table>
+                <tr>
+                  <td class="cbb">
+                    <a routerLink='/inbox'>
+                      <div id="contact-me-btn">Send a private message</div>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td id="n-padding">
+                    <h3>Skills & Expertise</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="tags-div">
+                      <div *ngIf="skill_exist == true">
+                        <label><span class="tags" *ngFor="let skills of sk"> {{skills}}</span></label>
+                                           
+                      </div>
+                      <div *ngIf="skill_exist == false">
+                        <div class="no-details">No skills</div>
+  
+                      </div>
+  
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="myservices-div w-control">
+            <h2>MY SERVICES</h2>
+            <div class="ser-left">
+              <div class="ser-cats">
+                <ul id="ser-ul">
+                  <li class="li cat-btns ser-selected" id="all-btn" (click)="gigs_get('all')">
+                    <span class="float-left">All</span>
+                    <span class="float-right">{{all_len}}</span>
+                  </li>
+                  <li class="li cat-btns" id="rc-btn" (click)="gigs_get('rc')">
+                    <span class="float-left">Resumes and cover letters</span>
+                    <span class="float-right">{{ rc_num }}</span>
+                  </li>
+                  <li class="li cat-btns" id="or-btn" (click)="gigs_get('or')">
+                    <span class="float-left" >Online Resumes</span>
+                    <span class="float-right">{{or_num}}</span>
+                  </li>
+                  <li class="li cat-btns" id="vr-btn" (click)="gigs_get('vr')">
+                    <span class="float-left">Visual Resumes</span>
+                    <span class="float-right">{{vr_num}}</span>
+                  </li>
+                  <li class="li cat-btns" id="lp-btn" (click)="gigs_get('lp')">
+                    <span class="float-left">LinkedIn Profiles</span>
+                    <span class="float-right">{{lp_num}}</span>
+                  </li>
+                    <li class='np-btn'><button id="req-custom-order">Request custom order</button></li>
+                    <li class='np-btn' routerLink="/inbox"><button id="contact-shop-owner-btn">Contact Shop Owner</button></li>
+                </ul>
+              </div>
+              <div class="auth-rep">
+                <h3>Author's Reputation</h3>
+                <hr>
+                <div class="rep-dets">
+                  <div class="like-ico">
+                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                  </div>
+                  <div class="perc">
+                    86%
+                  </div>
+                  <div class="rec-rat">
+                    Recommended
+                    <select class="rrating">
+                  <option value=""></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+                    <br>
+                  </div>
+                </div>
+                <button id="read-cust-rev-btn">Read all the Customer Reviews</button>
+              </div>
+            </div>
+            <div class="gigs-div" >
+              <div *ngFor='let gig of gigs'>
+                <a class="gig-links" >
+                  <div class="gig" (click)='gotoGig(gig._id)'>
+      
+                    <div class="gig-pic">
+                      <img src="http://localhost:3000{{gig.img1.replace('public','')}}" alt="" style="height:100%;width:auto;max-width:100%">
+                    </div>
+                    <div class="gig-dets">
+                      <h4>
+                        {{gig.title}}
+                      </h4>
+                      <h5 class="gig-credits">
+                       {{first_name}} {{last_name}}
+                      </h5>
+                    </div>
+      
+                    <div class="gig-footer">
+                        <div class="dets">Details</div>
+                        <div class="cost">$ {{gig.pac_cos_sta}}</div>
+                    </div>
+      
+                  </div>
+                  <div class="gig-details-container" style="background-color:rgb(209, 208, 208)">
+                    <div class="gig-dets-top">
+                      <p>Published: 08/2016</p>
+                      <h3 style="color:#888">{{gig.title}}</h3>
+                      <li style="color:#999">Category: {{gig.category}}</li>
+                      <p style="color:#999">{{gig.description}}</p>
+          
+                      <li style="color:#999">Make better decisions on how to market your business</li>
+                      <li style="color:#999">Upgrade your digital marketing skills for a new job or career change</li>
+                        </div>
+                        <div class="gig-dets-btm">
+                          <button class="dets-add-to-cart-btn" (click)='gotoGig(gig._id)'>
+                            Add to cart
+                          </button>
+      
+                      <button class="dets-add-fav-btn" (click)= "addtoFav(gig._id)">
+                        <span *ngIf="gig.fav_status == true">
+                          <i class="fa fa-heart-o" aria-hidden="true" style="color:red"></i>
+                        </span>
+                        <span *ngIf="gig.fav_status == false">
+                          <i class="fa fa-heart-o" aria-hidden="true" style="color:grey"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+                    
+                                <a class="empty-gigs"></a>
+                                <a class="empty-gigs"></a>
+                                <a class="empty-gigs"></a>
+                                <a class="empty-gigs"></a>
+                                <a class="empty-gigs"></a>
+            </div>
+            <div class="clear-both"></div>
+          </div>
+          <hr style="display:block;width:70%;margin:0 auto;">
+          <div class="rev-parent">
+            <h2 class="rev-head">REVIEWS</h2>
+            <div class="reviews-div">
+              <div id="main-reviews-table">
+                <div class="rev-top-div">
+                  <div id="main-rating-div">
+                    <table>
+                      <tr style="height:20px;">
+                        <td><span>Average  Rating</span></td>
+                      </tr>
+                      <tr>
+                        <td><span class="rating">{{f_avg_rat}}</span></td>
+                      </tr>
+                      <tr>
+                        <td id="n-ratings-td"> -->
+
+
+
+                          <!-- DONT UNCOMMENT  <span><select class="rrating">
+                <option value=""></option>
+                <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option></select>20 ratings</span> -->
+
+
+
+
+                  <!-- <div id="raty" score="f_avg_rat"></div>
+                </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="exp-ratings-div">
+                 
+                      <table id="exp-rating-table">
+                        <tr>
+                          <td colspan="2" style="text-align:left !important;">Details</td>
+                        </tr>
+                        <tr>
+                          <td class="s-w-td">5 Stars</td>
+                          <td>
+                            <div class="total-percent">
+                              <div class="fill-percent" id="five-star" [style.width]="f_five_rat"></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="s-w-td">4 Stars</td>
+                          <td>
+                            <div class="total-percent">
+                              <div class="fill-percent" id="four-star" [style.width]="f_four_rat"></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="s-w-td">3 Stars</td>
+                          <td>
+                            <div class="total-percent">
+                              <div class="fill-percent" id="three-star" [style.width]="f_three_rat"></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="s-w-td">2 Stars</td>
+                          <td>
+                            <div class="total-percent">
+                              <div class="fill-percent" id="two-star" [style.width]="f_two_rat"></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="s-w-td">1 Star</td>
+                          <td>
+                            <div class="total-percent">
+                              <div class="fill-percent" id="one-star" [style.width]="f_one_rat"></div>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                  </div>
+                </div>
+                
+                <div *ngFor="let rev of f_rev">
+                  <div class="rev-div">
+                    <table class="u-details">
+                      <tr>
+                        <td colspan="2"><img src="http://localhost:3000{{rev.profile_pic.replace('public','')}}" class="reviewer-pic">
+                          <div class="u-dets"><span class="u-name">{{rev.buyer_fname}} {{rev.buyer_lname}}</span><br><span class="posted-time">posted on {{rev.date}}</span></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:left">
+                         {{rev.score}}
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="u-review">
+                           {{rev.review}}
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+           -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           <body>          
+        <div class="custom-order-div-back">
+            <div class="custom-order-core">
+              <div class="custom-order-req">
+                <h4 id="cust-order-head">Custom Order Request</h4>
+                <i class="fa fa-times" id="custom-order-close-btn" aria-hidden="true" (click)='closeCustOrder()'></i>
+              </div>
+              <div class="custom-order-main">
+                <span class="cust-words">What are you looking for ?</span><br>
+                <textarea id="custom-order-desc"></textarea><br>
+                <input type="file" id="custom-order-file" name="custom-order-files" (change)="fileChange($event)" accept=".jpg,.png">
+                <span style="position:relative; display:block;height:auto;width:100%;text-align:right !important; color:#0192b5;padding-right:10px;"><label for="custom-order-file"><span style="cursor:pointer !important">Attach image</span></label>
+                </span><br>
+                <span class="cust-words">When do you need it? <span style="color:rgba(0,0,0,0.4);font-size:80%;">(Optional)</span></span><br>
+                <input type="text" id="custom-order-date"><br>
+              </div>
+              <div class="cust-submit-div">
+                <button id="cust-submit" (click)="post_custom_order()">Send Custom Request</button>
+              </div>
+            </div>
+          </div> 
+
+
+
+          <!--<div class="seller-profile-container">-->
+
+
+
+
+          <div class="seller-cover-pic">
+              <div class="center">
+              </div>
+          </div>
+          <div id="d-dark-back">
+            <div id="ab-sh-more-div"><span id="ab-close-btn">x</span>
+              <p>
+              </p>
+            </div>
+          </div>
+          <div class="seller-core-container w-control">
+            <div class="seller-left">
+              
+              <div class="seller-profile-icons">
+                  <div class="seller-profile-pic-main"><img src="" class="seller-pic img-circle"></div>
+                <table>
+                 
+                  <tr>
+                    <td><i class="fa fa-globe" aria-hidden="true" style="margin-right:10px;"></i>From :countrt
+                    </td>
+                  </tr>
+                    <tr>
+                      <td><i class="fa fa-clock-o" aria-hidden="true" style="margin-right:10px;"></i>Member Since: join_date
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><i class="fa fa-check-circle-o" aria-hidden="true" style="margin-right:10px;"></i>Email :email
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><i class="fa fa-comments-o" aria-hidden="true" style="margin-right:10px;"></i>Speaks : English</td>
+                    </tr>
+                </table>
+              </div>
+            </div>
+            <div class="seller-middle">
+              <h2>Hey, I'm first_name last_name&nbsp;&nbsp;<span style="background-color:#333333;color:white;font-size:38%;width:auto;height:10%;font-weight:500" class="badge">Product Manager</span>
+              </h2>
+              
+              <p>
+                 description
+              </p>
+                <p><a id="sh-more">Show more</a></p>
+                  <div id="s-middle-bottom">
+                    <table>
+                      <tr>
+                        <td>
+                          <span class="s-m-b-all">
+                            <span class="s-m-b-num">
+                              43
+                            </span>
+                          <br>
+                          <span class="bold">Jobs Done</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="s-m-b-all">
+                            <span class="s-m-b-num">
+                              *****
+                            </span>
+                          <br>
+                          <span class="bold">Reviews</span>
+                          </span>
+                        </td>
+                        <td id="no-b">
+                          <span class="s-m-b-all">
+                    <span class="s-m-b-num">
+                     <span style="font-size:50%;"></span>3 Days
+                          </span>
+                          <br>
+                          <span class="bold">Delivery</span>
+                          </span>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+            </div>
+            <div class="seller-right" style="background-color:#1F2836;border-color:transparent">
+              <table><br>
+                 <tr>
+                   <td>
+                    <p class="seller-p">Send a private message</p>
+                   </td>
+                 </tr><br>
+
+                 <tr>
+                    <td>
+                     <textarea style="font-size:80%;" rows="4" class="form-control">Hi Miracles Group, I noticed your profile and  would like to offer you my project. We can discuss any details over chat.</textarea>
+                    </td>
+                  </tr>
+
+                <tr>
+                  <td class="cbb">
+                    <a routerLink='/inbox'>
+                      <div id="contact-me-btn">Send a private message</div>
+                    </a>
+                  </td>
+                </tr>
+               
+                
+              </table>
+            </div>
+          </div>
+          <div class="myservices-div w-control">
+            <h2>MY SERVICES</h2>
+            <div class="ser-left">
+              <div class="ser-cats">
+                <ul id="ser-ul">
+                  <li class="li cat-btns ser-selected" id="all-btn" (click)="gigs_get('all')">
+                    <span class="float-left">All</span>
+                    <span class="float-right">all_len</span>
+                  </li>
+                  <li class="li cat-btns" id="rc-btn" (click)="gigs_get('rc')">
+                    <span class="float-left">Resumes and cover letters</span>
+                    <span class="float-right"> 0 </span>
+                  </li>
+                  <li class="li cat-btns" id="or-btn" (click)="gigs_get('or')">
+                    <span class="float-left" >Online Resumes</span>
+                    <span class="float-right">0</span>
+                  </li>
+                  <li class="li cat-btns" id="vr-btn" (click)="gigs_get('vr')">
+                    <span class="float-left">Visual Resumes</span>
+                    <span class="float-right">0</span>
+                  </li>
+                  <li class="li cat-btns" id="lp-btn" (click)="gigs_get('lp')">
+                    <span class="float-left">LinkedIn Profiles</span>
+                    <span class="float-right">0</span>
+                  </li>
+                    <li class='np-btn'><button id="req-custom-order">Request custom order</button></li>
+                    <li class='np-btn' routerLink="/inbox"><button id="contact-shop-owner-btn">Contact Shop Owner</button></li>
+                </ul>
+              </div>
+              <div class="auth-rep">
+                <h3>Author's Reputation</h3>
+                <hr>
+                <div class="rep-dets">
+                  <div class="like-ico">
+                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                  </div>
+                  <div class="perc">
+                    86%
+                  </div>
+                  <div class="rec-rat">
+                    Recommended
+                    <select class="rrating">
+                  <option value=""></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+                    <br>
+                  </div>
+                </div>
+                <button id="read-cust-rev-btn">Read all the Customer Reviews</button>
+              </div>
+            </div>
+
+
+
+            <!-- gig -->
+
+            <div class="container">
+
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                  <div class="gig">
+                    <div class="gig-img"></div>
+                    <div class="gig-text">
+                    <h1>Machine Learning A-Z:Hands-On Hands-On Python & R In...</h1>
+                      <h3>By Peter Moxon</h3>
+                
+                      <div class="stars">*****</div>
+                      </div>
+                      <div class="price">
+                          <i class="fa fa-user"></i>&nbsp;
+                          <p>129 Completed</p>
+                          <p id="price-val">Starting  At <span>$27</span></p>
+                
+                      </div>
+                  </div>
+                </div>
+            
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="gig">
+                      <div class="gig-img"></div>
+                      <div class="gig-text">
+                      <h1>Machine Learning A-Z:Hands-On Hands-On Python & R In...</h1>
+                        <h3>By Peter Moxon</h3>
+                  
+                        <div class="stars">*****</div>
+                        </div>
+                        <div class="price">
+                            <i class="fa fa-user"></i>&nbsp;
+                            <p>129 Completed</p>
+                            <p id="price-val">Starting  At <span>$27</span></p>
+                  
+                        </div>
+                    </div>
+                  </div>
+            
+                  <div class="col-lg-4 col-md-4 col-xs-12">
+                      <div class="gig">
+                        <div class="gig-img"></div>
+                        <div class="gig-text">
+                        <h1>Machine Learning A-Z:Hands-On Hands-On Python & R In...</h1>
+                          <h3>By Peter Moxon</h3>
+                    
+                          <div class="stars">*****</div>
+                          </div>
+                          <div class="price">
+                              <i class="fa fa-user"></i>&nbsp;
+                              <p>129 Completed</p>
+                              <p id="price-val">Starting  At <span>$27</span></p>
+                    
+                          </div>
+                      </div>
+                    </div>
+            
+                    
+              </div><br>
+            
+            
+            
+            </div>
+
+
+            <div class="clear-both"></div>
+          </div>
+          <hr style="display:block;width:85%;margin:0 auto;">
+           
+         
+
+
+
+          <div class="rev-parent">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-xs-12"><br><br>
+            <h2 class="rev-head">REVIEWS</h2>
+            </div>
+
+            <div class="col-lg-9 col-md-9 col-xs-12">
+            <div class="reviews-div">
+              <div id="main-reviews-table">
+                <div class="rev-top-div">
+                  <div id="main-rating-div">
+                    <table>
+                      <tr>
+                        <td><span>Average  Rating</span></td>
+                      </tr>
+                      <tr>
+                        <td><span class="rating">2.5</span></td>
+                      </tr>
+                      <tr>
+                        <td id="n-ratings-td"> 
+
+
+
+                          <!-- DONT UNCOMMENT  <span><select class="rrating">
+                <option value=""></option>
+                <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option></select>20 ratings</span> -->
+
+
+
+
+                  <div id="raty" score="f_avg_rat">*****</div>
+                </td>
+                      </tr>
+                    </table>
+                  </div>
+
+                  
+                  <div class="exp-ratings-div">
+                 
+                      <table id="exp-rating-table">
+                        <tr>
+                          <td colspan="2" style="text-align:left !important;">Details</td>
+                        </tr>
+                        <tr>
+                          <td class="s-w-td">5 Stars</td>
+                          <td>
+                            <div class="total-percent">
+                              <div class="fill-percent" id="five-star" [style.width]="f_five_rat"></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="s-w-td">4 Stars</td>
+                          <td>
+                            <div class="total-percent">
+                              <div class="fill-percent" id="four-star" [style.width]="f_four_rat"></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="s-w-td">3 Stars</td>
+                          <td>
+                            <div class="total-percent">
+                              <div class="fill-percent" id="three-star" [style.width]="f_three_rat"></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="s-w-td">2 Stars</td>
+                          <td>
+                            <div class="total-percent">
+                              <div class="fill-percent" id="two-star" [style.width]="f_two_rat"></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="s-w-td">1 Star</td>
+                          <td>
+                            <div class="total-percent">
+                              <div class="fill-percent" id="one-star" [style.width]="f_one_rat"></div>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                  </div>
+                </div>
+                
+                <div>
+                  <div class="rev-div">
+                    <table class="u-details">
+                      <tr>
+                        <td colspan="2"><img src="http://localhost:3000{{rev.profile_pic.replace('public','')}}" class="reviewer-pic">
+                          <div class="u-dets"><span class="u-name">rev.buyer_fname rev.buyer_lname</span><br><span class="posted-time">posted on 15/09/17</span></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:left">
+                         5
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="u-review">
+                           review text
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+</div>
+
+          </div>
+</div>
+          </body>
+           

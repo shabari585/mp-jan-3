@@ -1,0 +1,212 @@
+.gig-detail{
+    top:5%;
+    transform: translate(0,2%);
+}
+.gig-page{
+    width: 90%;
+    height:auto;
+}
+.gig-page1{
+    width: 100%;
+    height:auto;
+    border: 0.5px solid #ddd
+}
+.gig-page h1{
+    font-size: 150%;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+.badge{
+    border-radius: 0px;
+    background-color: #F4C150;
+}
+.location i,span{
+    color:#999;
+    font-size: 90%;
+    font-weight: 500
+}
+.btn-default{
+    height: 4vh;
+    font-size: 80%;
+    background-color: transparent;
+    border:0.5px solid #ddd;
+    line-height: 0px;
+}
+.btn-default i{
+    color:red;
+}
+.img{
+    background-image: url('../../assets/images/carousel.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+    width: 100%;
+}
+.gig-pack{
+    left:20%;
+    transform: translate(8%,0);
+    width: 80%;
+    padding: 10px;
+}
+.gig-pack1{
+    display: flex;
+}
+.zoom{
+    border: 0.5px solid #ddd;
+    width:140%;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.zoom h4{
+    font-size: 70%;
+    font-weight: normal;
+    top: 10%;
+    transform: translate(0,40%)
+    
+}
+.zoom-rate{
+    height: 8vh;
+}
+.zoom-rate p{
+   line-height: 50px;
+}
+.sold-text{
+    width: 60%;
+    padding: 10px;
+    left: 10%;
+    transform: translate(5%,0)
+}
+
+
+/* package */
+#packages-i{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+.packages-div {
+    position: relative;
+    display: block;
+    width: 65%;
+    font-size: 100%;
+    margin: 0px ;
+    white-space: normal;
+    border:0.5px solid #ddd;
+  }
+  .h {
+    position: relative;
+    display: block;
+    font-size: 130%;
+    text-align: left;
+    font-size:150%;
+    font-weight:bold;
+    color:#999;
+    margin-bottom: 30px;
+  }
+  .h::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 40px;
+    top: 130%;
+    left: 0;
+    background-color: #f9bf3b;
+    color: #f9bf3b;
+  }
+  .package-name {
+    font-size: 90%;
+    color: rgba(0, 0, 0, 0.9);
+  }
+  .package-cost {
+    position: relative;
+    display: inline-block;
+    color: red;
+    font-size: 130%;
+    margin-bottom: 10px;
+  }
+  .package-details {
+    position: relative;
+    display: block;
+    margin: 5px;
+    margin-left: 0;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.7);
+    white-space: normal;
+    overflow: hidden;
+  }
+  .packages-div table {
+    border: 1px solid rgba(128, 128, 128, 0.09);
+    table-layout: fixed;
+    width: 100%;
+    overflow: hidden;
+    white-space: normal;
+  }
+  .packages-div table td {
+    padding: 20px 10px;
+    width: 26.6666% !important;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.09);
+    border-right: 1px solid rgba(128, 128, 128, 0.09);
+    background-color: #fff;
+    text-align: center;
+    font-size: 98%;
+    line-height: 1.1;
+    overflow: hidden;
+    white-space: normal;
+  }
+  .packages-div table .left-t-header{
+    width: 20% !important;
+  }
+  .package-select-btns {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    width: 70%;
+    font-weight: bold;
+    background-color: #82B541;
+    border: transparent;
+    color: #fff;
+    font-size: 100%;
+    transition: all 0.1s;
+    border-radius: 2px;
+  }
+  .package-select-btns:hover {
+    cursor: pointer;
+    background-color: #6D9837;
+  }
+
+  /* extras */
+  .extras-text{
+      position: relative;
+      width: 70%;
+      justify-content: center;
+      align-items: center;
+      left: 10%;
+  }
+  
+  /* reviews */
+  .reviews{
+      top: 10%;
+      transform: translate(0,10%);
+      height: 80vh;
+      width: 100%;
+      background-color: #F4F4F4;
+  }
+  .total-percent {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 20px;
+    background-color: #D7D7D7;
+    border-radius: 5px;
+    text-align: left;
+  }
+  .fill-percent {
+    position: relative;
+    display: inline-block;
+    height: 100% !important;
+    border-radius: 1px;
+    background-color: #D23837;
+  }

@@ -1,0 +1,157 @@
+<app-header></app-header>
+<app-header1></app-header1>
+
+<div class="m-core">
+  
+    <div class="manage-orders-core">
+      
+        <div id="thanks-div">
+          <h3>Thank you for ordering</h3>
+          <h5>Your orders are now available to you below</h5>
+          <i id="t-close" class="fa fa-times" aria-hidden="true"></i>
+        </div>
+          <h2 id="orders-title">MY ORDERS</h2>
+          <input type="checkbox" checked data-toggle="toggle" data-on="Employer" data-off="Freelancer">
+          <div class="my-gigs-index">
+            <button class="index-head">
+    Orders
+  </button>
+            <button class="index-item" id="completed-btn" 
+            (click)="get_orders('completed')">
+    Completed
+  </button>
+            <button class="index-item" id="progress-btn" (click)="get_orders('inprogress')">
+    In Progress
+  </button>
+            <button class="index-item" id="cancelled-btn" (click)="get_orders('cancelled')">
+    Cancelled
+  </button>
+            <button class="index-item selected-index" id="all-btn" (click)="get_orders('all')">
+    All
+  </button>
+          </div>
+
+
+
+
+
+
+
+
+
+
+          <div class="orders-div">
+
+
+
+
+              <div class="order-div">
+                  <div class="order-img"></div>
+                  <div class="text">
+                  <h3>Management with Trello...</h3>
+                  <div class="order-display">
+                    <p>Seller:harrybest &nbsp;|&nbsp;</p>
+                    <p>November 11, 2015 &nbsp;|&nbsp;</p>
+                    <p>Total:$46</p>
+                    </div>
+                  </div><br><br>
+
+                  <div class="progress1">
+                      <p>started</p>
+                      <p>in progress</p>
+                      <p>delivered</p>
+                       </div>
+
+                       <div class="progress progress2">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="10"
+                          aria-valuemin="0" aria-valuemax="100" style="width:30%;background-color:green;">
+                            
+                          </div>
+                        </div><br>
+                </div>
+
+                
+
+
+            <!-- <div class="orders-core">
+
+
+
+
+
+              
+                <div class="order-item">
+
+
+
+                    
+                  <div class="oi-top">
+
+
+                     
+
+                    <table>
+                      <tr>
+                        <th>
+                          Ordered
+                        </th>
+                        <th>
+                          Seller
+                        </th>
+                        <th>
+                          Total
+                        </th>
+                      </tr>
+                      <tr>
+                        <td>
+                          x.order_date
+                        </td>
+                        <td>
+                          <a routerLink='/seller' (click)="gotoseller([x.seller_id])">
+                           x.seller_name...
+                          </a>
+                        </td>
+                        <td>
+                          US $
+                          20
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="oi-middle">
+                    <h3>
+                      x.title
+                    </h3>
+                    <div class="milestone-back">
+                      <div class="milestone-main" [style.width]="x.f_css_width">
+                      </div>
+                    </div>
+                    <div class="milestone-dets">
+                      <div class="float-left">
+                        x.order_date
+                      </div>
+                      <div class="float-right">
+                        x.pro_com_date
+                      </div>
+                    </div>
+                  </div>
+                  <div class="oi-bottom">
+                    <div class="oi-bottom-items">
+                      <i class="fa fa-comment-o" aria-hidden="true" style="margin-right:15px"></i>34
+                    </div>
+                    <div class="oi-bottom-items" id="oi-bottom-middle">
+                      <a (click)="go_to_gigDet([x.gig_id])" style="cursor:pointer"><i class="fa fa-eye" aria-hidden="true" style="margin-right:15px"></i>Quick View</a>
+                    </div>
+                    <div class="oi-bottom-items">
+                      <a (click)="go_to_orderDet([x.order_id])" style="cursor:pointer"><i class="fa fa-briefcase" aria-hidden="true" style="margin-right:15px"></i>Project</a>
+                    </div>
+                  </div>
+                </div>
+            </div> -->
+          </div>
+
+
+
+    </div>
+</div>
+  

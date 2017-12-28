@@ -1,0 +1,55 @@
+<header  style="background:transparent" class="main-header1 visible-md visible-lg">
+    <div class="header-control w-control">
+      <a routerLink='/home'>
+        <img src="../assets/../assets/images/m_logo.png" alt="" class="logo-img">
+      </a>
+      <ul class="horizantal-ul left-float-ul list-unstyled">
+        <li>
+          <div class="dropdown">
+            <button style="color:white" class="dropbtn" id="main-cat-btn"><i class="fa fa-bars" aria-hidden="true"></i> &nbsp; &nbsp;CATEGORIES </button>
+            <div class="dropdown-content">
+  
+  
+  
+              
+  
+  
+  
+  
+             <table class="cat-tables bb no-padding" >
+                <tr>
+                  <td class="bb no-padding"><a><span class="cat-btns b-all-btn" (click)="get_gigs('all')">Browse all Products</span></a></td>
+                </tr>
+                <tr>
+                  <td class="bb no-padding"><a><span class="cat-btns res-btn" (click)="get_gigs('rc')">Resumes and Cover Letters</span></a></td>
+                </tr>
+                <tr>
+                  <td class="bb no-padding"><a><span class="cat-btns on-btn" (click)="get_gigs('or')">Online Resumes</span></a></td>
+                </tr>
+                <tr>
+                  <td class="bb no-padding"><a><span class="cat-btns vr-btn" (click)="get_gigs('vr')">Visual Resumes</span></a></td>
+                </tr>
+                <tr>
+                  <td class="bb no-padding"><a><span class="cat-btns lp-btn" (click)="get_gigs('lp')">LinkedIn Profile</span></a></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </li>
+        <li routerLink='/how-it-works'>
+          <input style="color:white" type="button" class="main-nav-btns" id="how-it-works-btn" value="HOW IT WORKS">
+        </li>
+        <li routerLink='/become-an-author'>
+          <input style="color:white" type="button" class="main-nav-btns" id="become-an-author-btn" value="BECOME AN AUTHOR" (click)="showBackSignUp(true)">
+        </li>
+      </ul>
+      <ul class="horizantal-ul right-float-ul list-unstyled">
+        <li>
+          <input style="color:white" type="button" class="main-nav-btns" id="main-register-btn" (click)="showBackSignUp(true)" value="REGISTER">
+        </li>
+        <li id="sign-in-li">
+          <input style="color:white" type="button" class="main-nav-btns" id="sign-in-btn" (click)="showBackLogin(true)" value="SIGN IN">
+        </li>
+      </ul>
+    </div>
+  </header>

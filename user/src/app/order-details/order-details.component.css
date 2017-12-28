@@ -1,0 +1,107 @@
+.order-buyer{
+    width: 100%;
+    background-color: #161E2C;
+    color: white;
+    height: 20vh;
+}
+.order-buyer .container{
+    top: 10%;
+    transform: translate(0,40%)
+}
+.display{
+    display: flex;
+}
+.order-start{
+    background-color: white;
+    width: 45%;
+    height:80%;
+    text-align: center;
+}
+.order-start i,h4{
+    color: #00678D;
+    
+}
+.order-start i{
+    font-size: 150%;
+    font-weight: 500;
+    text-align: center;
+    
+}
+.order-start h4{
+    font-size: 80%;
+}
+.chat{
+    width: 70%;
+    height:17vh;
+    background-color: #fff;
+    border:0.5px solid #ddd;
+    border-radius: 3px;
+}
+.chat1{
+    width: 70%;
+    height:auto;
+    background-color: #fff;
+    border:0.5px solid #ddd;
+    border-radius: 3px;
+}
+.padding{
+    top: 10%;
+    transform: translate(0,10%)
+}
+.padding1{
+    top: 10%;
+    transform: translate(0,40%)
+}
+.feedback{
+    background-color: #00B22D;
+    width: 70%;
+    height: auto;
+   
+}
+.rate{
+    text-align: center;
+    top: 50%;
+    transform: translate(0,50%)
+}
+.rate i{
+    color: white;
+    font-size: 35px;
+}
+.rate p{
+    color:white;
+    font-size: 90%;
+    font-weight: 450;
+}
+.feedback1{
+    background-color: white;
+    width: 80%;
+    height: auto;
+    left: 50%;
+    transform: translate(10%,0)
+}
+.feedback-text{
+    display: flex;
+    padding: 20px;
+}
+.text-area{
+    left: 50%;
+    transform: translate(4%,0);
+    width: 80%;
+    border-radius: 10px;
+}
+.feedback1 button{
+    font-size: 80%;
+    font-weight: 500;
+    height: 5vh;
+    float: right;
+    left: -50%;
+    transform: translate(-90%,0)
+
+}
+table th{
+font-weight: 500;
+font-size: 90%;
+}
+table td{
+    font-size: 95%;
+}

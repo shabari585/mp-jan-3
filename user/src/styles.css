@@ -1,0 +1,149 @@
+/* You can add global styles to this file, and also import other style files */
+.w-control{
+    width: 85%;
+    margin: 0 auto;
+
+} 
+
+/* NAVBAR */
+/* .navbar-default{
+    background-color: transparent;
+    height: 5vh;
+}
+.navbar ul li{
+    list-style-type: none;
+    float: left;
+    padding:5px 10px;
+}
+
+.logo-img{
+    width: 15%;
+    height: 7vh;
+    top: 5%;
+    transform: translate(0,30%)
+}
+.ul-right{
+    position: absolute;
+    top: 30%;
+    left: 67%;
+} */
+/* .border1{
+    border-left: 0.5px solid #ddd
+} */
+/* .ul-right span{
+    font-size: 80%;
+    font-weight: 600;
+    color: #5F5F5F;
+    
+}
+.fa-bell,.fa-envelope{
+    color: #5F5F5F
+}
+.fa-plus-circle{
+    color: #0EA2EE;
+    font-size: 20px;
+    
+}
+.mail-noty{
+    position: absolute;
+    background-color: #00D7B5;
+    border-radius: 100%;
+    height:17px;
+    width:18px;
+    color:white;
+    top: 0%;
+    left: 46%;
+    
+}
+.bell-noty{
+    position: absolute;
+    background-color: #00D7B5;
+    border-radius: 100%;
+    height:17px;
+    width:18px;
+    color:white;
+    top: 0%;
+    left: 56%;
+}
+.ul-right .imgg{
+ border-radius: 100%;
+}
+.ul-right .imgg1{
+    border-radius: 3px;
+    border: 0.5px solid #ddd
+   } */
+
+
+
+
+/* GIG */
+.gig{
+    height: auto;
+    width: 105%;
+    border: 0.5px solid #ddd;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.gig-img{
+    background: url("./assets/images/gig.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 35vh;
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.gig-text{
+    margin: 10px;
+}
+.gig h1{
+    font-size: 100%;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    line-break: normal;
+    line-height: 1;
+    white-space: normal !important;
+    
+}
+.gig h3{
+    font-size: 90%;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #999
+    
+}
+.price{
+    display: inline-flex;
+    margin: 10px;
+} 
+.price p{
+    font-size: 80%;
+    color: #999;
+}
+.price #price-val{
+    font-size: 90%;
+    text-transform: uppercase;
+    float: right;
+    top: -10%;
+    transform: translate(20%,-20%)
+}
+.price span{
+    font-size: 140%;
+    color: green;
+    font-weight: bold;
+    
+}
+.gig-btn{
+    color: teal;
+    width: 20%;
+    height: 20%;
+    border-radius: 0px;
+    border-color: #ddd;
+    background-color: transparent;
+    font-size: 120%;
+    font-weight: 500;
+    left: 50%;
+    transform: translate(220%,0)
+
+}

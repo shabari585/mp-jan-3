@@ -1,0 +1,60 @@
+
+.m-core {
+    position: relative;
+    display: block;
+    /* margin-top: 11vh; */
+    height: 100vh;
+  }
+  #orders-title {
+    position: relative;
+    display: block;
+    text-align: left;
+    font-size: 190%;
+    color: #000;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+  
+  #orders-title::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
+    height: 5px;
+    width: 40px;
+    background-color: #F9BF3B;
+    color: #F9BF3B;
+  }
+  
+  .btn-success{
+      background-color: #00DBB2;
+      float: right;
+      border-color: transparent;
+  }
+ .not-img{
+     left: -50%;
+     transform: translate(-30%,0)
+ }
+ .padding{
+     top: 10%;
+     transform: translate(0,23%)
+ }
+  @media screen and (min-width:220px) and (max-width:740px){
+    .reviews{
+        display: block;
+    }
+    .btn-success{
+        float: left;
+        position: relative;
+        top: 0%;
+        transform: translate(0,-50%)
+    }
+    #word{
+       white-space: normal !important;
+    }
+    .w-control{
+        width: 350px;
+    }
+  }

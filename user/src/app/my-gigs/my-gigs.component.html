@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+        <app-header></app-header>
+        <app-header1></app-header1>
+    <body><br><br><br><br>
+        <div class="container"><br><br>
+            <h2 id="orders-title">My Gigs</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-xs-12 orders">
+                        
+                   <h4>Orders</h4>
+                   <ul>
+                       <li (click)="go_to_gig('completed')" style="cursor:pointer">Completed</li>
+                       <li (click)="go_to_gig('inprogress')" style="cursor:pointer">In Progress</li>
+                       <li (click)="go_to_gig('cancelled')" style="cursor:pointer">Cancelled</li>
+                       <li (click)="go_to_gig('all')" style="cursor:pointer">All</li>
+                   </ul>
+                </div>
+                
+                <div class="col-lg-9 col-md-9 col-xs-12">
+
+                  <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                  <div style="border:1px dashed #ddd">
+                    <div style="background-color:#F5F5F5" class="order-div">
+                        <div class="order-img">
+                            
+                        </div>
+                       
+                        <div class="text">
+                        <h3 style="text-align:center">Upload New Item</h3>
+                        <div style="text-align:center" class="order-display">
+                          <p style="color:#999;white-space:normal">Loreum imposum  dolor sit Loreum imposum  dolor sit Loreum imposum  dolor sit</p>
+                          </div>
+                          
+                              
+                        </div>
+      </div>
+                      </div> 
+                </div>
+
+                 <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="order-div">
+                        <div class="order-img">
+                            <i style="font-size:25px;color:white;float:right;padding:15px;" class="fa fa-cog" (click)="open_drop()"></i>
+                        </div>
+                        
+                        <div class="text">
+                        <h3 style="white-space:normal">Management with Trello...</h3>
+                        <div class="order-display">
+                          <p style="color:#999">Loreum imposum  dolor sit</p>
+                          </div>
+                          
+                              <span>Flyers</span>
+                              <span style="float:right">$6</span>
+                            
+                            <hr>
+                            <img src="../../assets/images/gig.png" style="width:35px;height:35px;border-radius:25px;" class="img-circle img-fluid">
+                            <span style="font-size:80%;font-weight:500">Johnny Fisher</span>
+                            <span style="float:right">*****</span>
+                        </div>
+ 
+                      </div>
+
+                      <div style="width:45%;background-color:white;text-align:center;z-index:100;border:0.5px solid #999;top:-50%;float:right;transform:translate(0,-260%)" class="sales-drop">
+                    
+                          <li style="border-bottom:0.5px solid #ddd;list-style-type:none;font-size:85%;font-weight:450;line-height:35px;">Accept</li>
+                          <li  style="border-bottom:0.5px solid #ddd;list-style-type:none;font-size:85%;font-weight:450;line-height:35px;">Deliver</li>
+                          <li style="list-style-type:none;font-size:85%;font-weight:450;line-height:35px;">Cancel</li>
+                        
+                        </div>
+                 </div>
+
+
+                 <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="order-div">
+                        <div class="order-img">
+                            <i style="font-size:25px;color:white;float:right;padding:15px;" class="fa fa-cog" (click)="open_drop()"></i>
+                        </div>
+                        
+                        <div class="text">
+                        <h3 style="white-space:normal">Management with Trello...</h3>
+                        <div class="order-display">
+                          <p style="color:#999">Loreum imposum  dolor sit</p>
+                          </div>
+                          
+                              <span>Flyers</span>
+                              <span style="float:right">$6</span>
+                            
+                            <hr>
+                            <img src="../../assets/images/gig.png" style="width:35px;height:35px;border-radius:25px;" class="img-circle img-fluid">
+                            <span style="font-size:80%;font-weight:500">Johnny Fisher</span>
+                            <span style="float:right">*****</span>
+                        </div>
+ 
+                      </div>
+
+                      <div style="width:45%;background-color:white;text-align:center;z-index:100;border:0.5px solid #999;top:-50%;float:right;transform:translate(0,-260%)" class="sales-drop">
+                    
+                          <li style="border-bottom:0.5px solid #ddd;list-style-type:none;font-size:85%;font-weight:450;line-height:35px;">Accept</li>
+                          <li  style="border-bottom:0.5px solid #ddd;list-style-type:none;font-size:85%;font-weight:450;line-height:35px;">Deliver</li>
+                          <li style="list-style-type:none;font-size:85%;font-weight:450;line-height:35px;">Cancel</li>
+                        
+                        </div>
+                 </div>
+
+                 </div>
+                  
+                </div>
+            </div>
+
+
+            <!-- UNCOMMENT AFTER -->
+            <!-- <div class="image "><span (click)="hide_greeting()" ><i  class="fa fa-times " aria-hidden="true"></i></span>
+
+                <img  src="../../assets/img/u1998.png" class="img-responsive" alt="img">
+                <div class="text-img">
+                <h3 class="text-center"><b>Congratulations! You posted a contest</b></h3>
+                <p class="text-center">While you have coffee and wait for the entries to come,</p>
+                <p class="text-center"><b>why not post another contest?</b></p>
+                </div>
+                
+            </div> -->
+            
+        </div>
+        <div class="pop-up">
+            <div class="pop-in">
+                <h2>Are You Sure !</h2>
+                <h3>Want To Delete This Gig ??</h3>
+                <button class="btn btn-danger" (click)="fin_delete_gig()">Ok</button>
+                <button class="btn btn-success" (click)="close_pop()">Cancel</button>
+            </div>
+        </div>
+    </body>
+</html>

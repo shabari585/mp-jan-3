@@ -1,0 +1,186 @@
+.r-f-div input {
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .r-f-div {
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    width: 75%;
+    margin-left: 5%;
+    border-radius: 2px;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.09);
+  }
+  .r-f-div .headings {
+    position: relative;
+    display: block;
+    color: #000;
+    font-weight: bold;
+    margin-top: 4% !important;
+    width: 80%;
+    margin: 4% auto auto auto;
+    font-size: 210% !important;
+  }
+  .p-need {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+  }
+  .profile-photo-div {
+    position: relative;
+    display: block;
+    width: 80%;
+    margin: 0px auto;
+    margin-bottom: 20px !important;
+  }
+  .p-p-div-title {
+    position: relative;
+    display: block;
+    font-size: 85%;
+  }
+  .p-p-div-pic {
+    position: relative;
+    display: block;
+    width: 70%;
+    float: left;
+    overflow: hidden;
+    white-space: normal;
+    margin: 20px 0;
+  }
+  #change-p-p {
+    position: relative;
+    float: left;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    white-space: normal;
+  }
+  .custom-p-p {
+    position: relative;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  #c-p-p {
+    display: none;
+  }
+  .name-div .p-l-f-div {
+    position: relative;
+    float: left;
+    width: 45%;
+    margin-right: 10%;
+  }
+  .name-div input {
+    height: 35px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .name-div .p-r-f-div {
+    position: relative;
+    display: inline-block;
+    width: 45%;
+  }
+  .name-div {
+    position: relative;
+    display: block;
+    clear: both;
+    margin-top: 40px !important;
+  }
+  .p-f-titles {
+    color: #000 !important;
+  }
+  #c-p-btn {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+  }
+  #c-p-btn:hover {
+    cursor: pointer;
+  }
+  #s-ab-you-title {
+    position: relative;
+    float: left;
+    font-size: 100% !important;
+    color: rgba(0, 0, 0, 0.7) !important;
+  }
+  textarea {
+    position: relative;
+    float: right;
+    height: 150px;
+    width: 400px;
+    padding: 10px;
+  }
+  .save-btn-area {
+    clear: both;
+    position: relative;
+    display: inline-block;
+    height: 100px;
+    width: 100%;
+    background-color: #fafafa !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.09);
+    margin: 0;
+  }
+  .save-button {
+    position: relative;
+    display: inline-block;
+    margin-top: 25px !important;
+    margin-left: 140px;
+    height: 45px !important;
+    width: 120px;
+    color: #fff !important;
+    background-color: #119BE0 !important;
+    border: transparent !important;
+    border-radius: 2px;
+    font-size: 90%;
+    margin: 0;
+  }
+  .save-button:hover {
+    cursor: pointer;
+    background-color: #119BE0 !important;
+  }
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:220px) and (max-width:740px){
+    .r-f-div {
+        position: relative;
+        display: inline-block;
+        background-color: #fff;
+        left: -5%;
+        top: 17%;
+        transform: translate(0,17%)
+      }
+      .headings {
+        width: 100%;
+        float: left;
+        
+      }
+      .name-div input {
+        height: 35px;
+        width: 100%;
+        margin-top: 10px;
+      }
+      
+}

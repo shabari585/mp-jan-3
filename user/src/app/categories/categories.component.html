@@ -1,0 +1,368 @@
+<app-header></app-header>
+<body>
+      <div class="top-image">
+            <div class="d-back"></div>
+            <div class="w-control">
+              <h2 id="top-cat-title" style="padding-left:15%;">
+                  <span style="font-size:60px;color:rgb(253, 175, 48)">{{selected_cat}}</span>
+              </h2>
+              <button class="play-vid-btn" (click)="toggleVideo('show')">
+              <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+              <h4>How it works</h4>
+            </button>
+            </div>
+          </div>
+          <div class="h-vid-div center">
+            <div class="h-vid center" id="popupVid">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/T5oVWmSg_5g?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <span class="c-btn" (click)="toggleVideo('hide')">
+            <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+          </span>
+          </div>
+          <div class="c-main-container w-control">
+            <div class="categories-div">
+              <table class="categories-table cat-tables bb">
+                <tr>
+                  <td class="cat-header">Shop Category</td>
+                </tr>
+              </table>
+              <table class="cat-tables bb no-padding">
+                <tr>
+                  <td class="bb no-padding"><input type="button" class="cat-btns" id="all-products" value="Browse all Products" (click)="gigs_get('all')">
+                    <!-- <div class="sub-cat-cats">
+                      <ul>
+                        <li><a href="">Accounting</a></li>
+                        <li><a href="">Administration & Office Support</a></li>                    
+                      </ul>
+                    </div> -->
+                  </td>
+                </tr>
+                <tr>
+                  <td class="bb no-padding"><input type="button" class="cat-btns" id="rc" value="Resumes and Cover Letters"  (click)="gigs_get('rc')">
+                    <!-- <div class="sub-cat-cats">
+                      <ul>
+                        <li><a href="">Accounting</a></li>
+                        <li><a href="">Administration & Office Support</a></li>                   
+                      </ul>
+                    </div> -->
+                  </td>
+                </tr>
+                <tr>
+                  <td class="bb no-padding"><input type="button" class="cat-btns" id="or" value="Online Resumes" (click)="gigs_get('or')">
+                    <!-- <div class="sub-cat-cats">
+                      <ul>
+                        <li><a href="">Accounting</a></li>
+                        <li><a href="">Administration & Office Support</a></li>
+                       
+                      </ul>
+                    </div> -->
+                  </td>
+                </tr>
+                <tr>
+                  <td class="bb no-padding"><input type="button" class="cat-btns" id="vr" value="Visual Resumes" (click)="gigs_get('vr')">
+                    <!-- <div class="sub-cat-cats">
+                      <ul>
+                        <li><a href="">Accounting</a></li>
+                        <li><a href="">Administration & Office Support</a></li>
+                       
+                      </ul>
+                    </div> -->
+                  </td>
+                </tr>
+                <tr>
+                  <td class="bb no-padding"><input type="button" class="cat-btns" id="lp" value="LinkedIn Profile" (click)="gigs_get('lp')">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="bb no-padding"><input type="button" class="cat-btns" id="ph1-btn" value="Placeholder 1"></td>
+                </tr>
+                <tr>
+                  <td class="bb no-padding"><input type="button" class="cat-btns" id="ph2-btn" value="Placeholder 2"></td>
+                </tr>
+              </table>
+              <table class="cat-tables bb sticky-tables" style="background-color:#FAFAFA">
+                <tr>
+                  <td class="cat-header" style="font-weight:bold">Rating</td>
+                </tr>
+                <tr>
+                  <td><span class="right-float">
+                <!-- Rating -->
+                <!-- <div class="b-rating"> -->
+                  
+                <!-- </div> -->
+              </span></td>
+                </tr>
+              </table>
+    
+             
+              <table class="cat-tables sub-txts" style="background-color:#FAFAFA">
+                  <tr>
+                    <td class="cat-header" style="font-weight:bold">Seller Level</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="right-float"><input type="checkbox" value="NewSeller" id="newseller"><label for="newseller"><span></span>New Seller</label>
+                      </span><span class="left-float">(30)</span>
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                      <td>
+                        <span class="right-float"><input type="checkbox" value="LevelOne" id="levelone"><label for="levelone"><span></span>Level One</label>
+                        </span><span class="left-float">(14)</span>
+                       
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          <span class="right-float"><input type="checkbox" value="LevelTwo" id="leveltwo"><label for="leveltwo"><span></span>Level Two</label>
+                          </span><span class="left-float">(27)</span>
+                         
+                        </td>
+                      </tr>
+                      <tr>
+                          <td>
+                            <span class="right-float"><input type="checkbox" value="TopRated" id="toprated"><label for="toprated"><span></span>Top Rated Seller</label>
+                            </span><span class="left-float">(2)</span>
+                            
+                          </td>
+                        </tr>
+                  <tr>
+                    
+                  </tr>
+                </table> 
+    
+    
+    
+    
+              <table class="cat-tables sub-txts" style="background-color:#FAFAFA">
+                <tr>
+                  <td class="cat-header" style="font-weight:bold">Seller Language</td>
+                </tr>
+                <tr>
+                  <td><span class="right-float"><input type="checkbox" value="enlish" id="eng"><label for="eng"><span></span>English</label>
+                    </span><span class="left-float">(14)</span></td>
+                </tr>
+                <tr>
+                  <td><a href="" class="show-more-cats">Show More</a></td>
+                </tr>
+              </table>
+            </div>
+
+            <!-- gig -->
+
+            <div class="container">
+
+                    <div class="row">
+                      <div class="col-lg-4 col-md-4 col-xs-12">
+                        <div class="gig">
+                          <div class="gig-img"></div>
+                          <div class="gig-text">
+                          <h1>Machine Learning A-Z:Hands-On Hands-On Python & R In...</h1>
+                            <h3>By Peter Moxon</h3>
+                      
+                            <div class="stars">*****</div>
+                            </div>
+                            <div class="price">
+                                <i class="fa fa-user"></i>&nbsp;
+                                <p>129 Completed</p>
+                                <p id="price-val">Starting  At <span>$27</span></p>
+                      
+                            </div>
+                        </div>
+                      </div>
+                  
+                      <div class="col-lg-4 col-md-4 col-xs-12">
+                          <div class="gig">
+                            <div class="gig-img"></div>
+                            <div class="gig-text">
+                            <h1>Machine Learning A-Z:Hands-On Hands-On Python & R In...</h1>
+                              <h3>By Peter Moxon</h3>
+                        
+                              <div class="stars">*****</div>
+                              </div>
+                              <div class="price">
+                                  <i class="fa fa-user"></i>&nbsp;
+                                  <p>129 Completed</p>
+                                  <p id="price-val">Starting  At <span>$27</span></p>
+                        
+                              </div>
+                          </div>
+                        </div>
+                  
+                        <div class="col-lg-4 col-md-4 col-xs-12">
+                            <div class="gig">
+                              <div class="gig-img"></div>
+                              <div class="gig-text">
+                              <h1>Machine Learning A-Z:Hands-On Hands-On Python & R In...</h1>
+                                <h3>By Peter Moxon</h3>
+                          
+                                <div class="stars">*****</div>
+                                </div>
+                                <div class="price">
+                                    <i class="fa fa-user"></i>&nbsp;
+                                    <p>129 Completed</p>
+                                    <p id="price-val">Starting  At <span>$27</span></p>
+                          
+                                </div>
+                            </div>
+                          </div>
+                  
+                          
+                    </div><br>
+                  
+                  
+                  
+                  </div>
+
+
+            <!-- UNCOMMENT -->
+            <!-- <div class="gigs-home">          
+              <div class="main-filters-div">
+                <ul class="horizantal-ul filters-ul" style="padding:10px">
+                    
+                </ul>
+                <ul class="horizantal-ul views-ul">
+                  <li><button id="grid-ico" class="v-selected"><i class="fa fa-th-large" width="20"></i></button></li>
+                  <li><button id="list-ico"><i class="fa fa-th-list" width="20"></i></button></li>
+                </ul>
+              </div>
+              <div class="gigs-core gigs-div">
+                <div *ngFor="let gig of gigs">
+                  <a class="gig-links">
+        
+                    <div class="gig" (click)='gotoGig(gig._id)'>
+        
+                      <div class="gig-pic">
+                        <img src="http://localhost:3000{{gig.img1.replace('public','')}}" alt="" style="height:100%;width:auto;max-width:100%">
+                      </div>
+                      <div class="gig-dets">
+                        <h4>
+                          {{gig.title}}
+                        </h4>
+                        <h5 class="gig-credits">
+                          {{gig.first_name}} {{gig.last_name}}
+                        </h5>
+                      </div>
+        
+                      <div class="gig-footer">
+                          <div class="dets">Details</div>
+                          <div class="cost">$ {{gig.pac_cos_sta}}</div>
+                      </div>
+        
+                    </div>
+                    <div class="gig-details-container">
+                      <div class="gig-dets-top">
+                        <p>Published: 08/2016</p>
+                        <h3 style="color:#888">{{gig.title}}</h3>
+                        <li style="color:#999">Category: {{gig.category}}</li>
+                        <p style="color:#999">{{gig.description}}</p>
+            
+                        <li style="color:#999">Make better decisions on how to market your business</li>
+                        <li style="color:#999">Upgrade your digital marketing skills for a new job or career change</li>
+                          </div>
+                          <div class="gig-dets-btm">
+                            <button class="dets-add-to-cart-btn" (click)='gotoGig(gig._id)'>
+                              Add to cart
+                            </button>
+        
+                        <button class="dets-add-fav-btn" (click)= "addtoFav(gig._id)">
+                          <span *ngIf='gig.fav_status == true'>
+                            <i class="fa fa-heart-o heart" aria-hidden="true" style="color:red"></i>
+                          </span>
+                          <span *ngIf='gig.fav_status == false'>
+                              <i class="fa fa-heart-o heart" aria-hidden="true" style="color:grey"></i>
+                            </span>
+                        </button>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                  <a class="empty-gigs"></a>
+                  <a class="empty-gigs"></a>
+                  <a class="empty-gigs"></a>
+                  <a class="empty-gigs"></a>
+                  <a class="empty-gigs"></a>
+              </div>
+              <div class="h-gigs-div">
+                <div *ngFor="let gig of list_gigs">
+                  <a>
+                    <div class="h-gig">
+                      <div class="h-gig-pic" (click)='gotoGig(gig._id)'>
+                          <img src="http://localhost:3000{{gig.img1.replace('public','')}}" alt="" style="height:100%;width:auto;max-width:100%">
+                      </div>
+                      <div class="h-dets">
+                        <h4>
+                          {{gig.title}}
+                        </h4>
+                        <ul class="h-gig-ul">
+                          <li>
+                            <div class="h-gig-author-div">
+                              <img src="http://localhost:3000{{gig.profile_pic.replace('public','')}}"><span class="h-gig-author-name">{{gig.first_name}}{{gig.last_name}}</span>
+                            </div>
+                          </li>
+                          <li> -->
+                            <!-- <div class="h-rating"> -->
+                                <!-- <div id ="rating" style='z-index:auto'></div>                                                         -->
+                            <!-- <select class="rating">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                            </select>
+                            <span class="tot-rating-num">(3)</span> -->
+                          <!-- </div> -->
+
+
+                          <!-- UNCOMMENT THIS AFTER -->
+                          <!-- </li>
+                          <li style="width:50%">
+                            <span class="comp"><i class="fa fa-users people-icon"></i>{{gig.num_of_pro_com}}</span>
+                          </li>
+                          <li style="width:50%"><span class="h-gig-fav-btn add-fav-btn" (click)="addtoFav(gig._id)">
+                            <span *ngIf="gig.fav_status == true">
+                              <i class="fa fa-heart" aria-hidden="true" style="color:red"></i>
+                            </span>
+                            <span *ngIf="gig.fav_status == false">
+                                <i class="fa fa-heart" aria-hidden="true" style="color:grey"></i>
+                            </span>
+                          </span></li>
+                          <li style="width:50%">
+                            <div class="h-price">
+                              <span class="dolar">$</span>{{gig.pac_cos_sta}}
+                            </div>
+                          </li>                
+                        </ul>                        
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>          
+            </div> -->
+
+
+
+          </div>
+
+
+          </body>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          
+    
+    
+    
+    
+        

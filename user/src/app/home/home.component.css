@@ -1,0 +1,332 @@
+.home-img{
+    background-image: url("../../assets/images/home.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:100vh;
+    top: 0%
+}
+.home-text{
+    width: 50%;
+    background-color: #0052CC;
+    height: 70vh;
+    
+   
+}
+.home-text h1{
+    color: white;
+    font-size:250%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    left: 50%;
+    top: 50%;
+    transform: translate(30%,100%)
+}
+.input-group .form-control{
+width:50%;
+border-radius: 0px;
+}
+.input-group{
+    width:70%;
+    height:8vh;
+    left: 30%;
+    top: 40%;
+    transform: translate(0%,40%) 
+}
+.input-group .input-group-addon{
+    border-radius: 0px;
+    height:8vh;
+    width:20%;
+    background-color: #EE2E24;
+    border-color: transparent;
+    color: white;
+    font-size: 100%;
+    font-weight: 500;
+    text-align: center;
+}
+#second-vp-head h1{
+    text-align: center;
+    font-size: 200%;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    left: 50%;
+    transform: translate(35%,0)
+}
+#third-vp-head h1{
+    text-align: center;
+    font-size: 200%;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    left: 50%;
+    transform: translate(50%,0)
+}
+#second-vp-head h3{
+    text-align: center;
+    font-size: 120%;
+    font-weight: 400;
+    font-family: cursive;
+    left: 50%;
+    transform: translate(35%,0)
+}
+#second-vp-head::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 5px;
+    width: 40px;
+    background-color: #f1c40f;
+  }
+ 
+  .row-border1{
+      border-right: 2px solid #ddd;
+      border-bottom:  1px solid #ddd;
+      height: auto;
+      text-align: center;
+  }
+  .explore-img p{
+      top: 50%;
+      transform: translate(0,450%);
+      text-align: center;
+      font-weight: 500;
+      word-break: break-all;
+  }
+  .explore-img1 p{
+    top: 50%;
+    transform: translate(0,450%);
+    text-align: center;
+    font-weight: 500;
+    word-break: break-all;
+}
+.explore-img2 p{
+    top: 50%;
+    transform: translate(0,450%);
+    text-align: center;
+    font-weight: 500;
+    word-break: break-all;
+    white-space: normal 
+}
+.explore-img3 p{
+    top: 50%;
+    transform: translate(0,450%);
+    text-align: center;
+    font-weight: 500;
+    word-break: break-all;
+}
+  .row-border2{
+    border-right: 2px solid #ddd;
+    border-top:  1px solid #ddd
+}
+.row-border3{
+    border-left: 2px solid #ddd;
+    border-bottom:  1px solid #ddd
+}
+.row-border4{
+    border-left: 2px solid #ddd;
+    border-top:  1px solid #ddd
+}
+  .img-caption{
+      z-index: 100;
+      text-align: center;
+      font-size: 100%;
+      font-weight: 700;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      top:-50%;
+      left: 50%;
+      transform: translate(250%,-100%)
+  }
+  .img-text .btn-default{
+      background-color: #744F81;
+      color: white;
+      font-size: 80%;
+      border-radius: 25px;
+      width: 40%;
+      height: 10%;
+      text-align: center;
+      line-height: 10px;
+      
+  }
+  .text p{
+      text-align: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 110%;
+      font-weight: normal;
+  }
+  .img-text{
+      text-align: center;
+      font-size: 120%;
+      font-weight: bold;
+      top: -50%;
+      transform: translate(0,-50%)
+  }
+  .img-text .p1{
+    text-align: center;
+    font-size: 80%;
+    font-weight: normal;
+    top: -50%;
+    transform: translate(0,-50%)
+}
+  .explore .btn-primary{
+      background-color: #F93D66;
+      border-color: transparent;
+      color: white;
+      text-transform: uppercase;
+      left: 50%;
+      transform: translate(310%,0)
+  }
+  .explore-img{
+    background-image:url('../../assets/images/brand.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:100%;
+    width:100%;
+    height:90%;
+}
+.explore-img1{
+    background-image:url('../../assets/images/market-logo.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:100%;
+    width:100%;
+    height:90%;
+}
+.explore-img2{
+    background-image:url('../../assets/images/pack.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:100%;
+    width:100%;
+    height:90%;
+}
+.explore-img3{
+    background-image:url('../../assets/images/book-cover.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:100%;
+    width:100%;
+    height:90%;
+}
+  
+  /* careers */
+  .careers{
+      width: 100%;
+      background-color: #F5F5F5;
+  }
+  .careers img{
+      justify-content: center;
+      align-items: center;
+      left: 50%;
+      transform: translate(20%,0)
+  }
+  .careers-text{
+    width: 80%;
+}
+.careers-text h4{
+    text-align: center;
+    font-size: 120%;
+    height: 5vh;
+  
+  }
+  .careers-text p{
+      text-align: center;
+      font-size: 100%;
+      color: #999
+    }
+
+/* reviews     */
+.radio{
+    top: 50%;
+    left:50%;
+    transform: translate(3%,120%)
+}
+.radio i{
+    color: #B3B1FC;
+}
+.reviews{
+    width: 100vw;
+    background-color: #7074FB;
+    height: 50vh;
+}
+.review-text{
+    width: 40%;
+    color: white;
+    font-size: 120%;
+    white-space: normal !important;
+    
+}
+
+    /* earn */
+    
+    .earn-text h1{
+        text-align: center;
+        font-size: 200%;
+        font-weight: bolder;
+        font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+        
+    }
+    .earn-text h3{
+        text-align: center;
+        font-size: 120%;
+        font-weight: 400;
+        font-family: Arial, Helvetica, sans-serif;
+        white-space: normal !important;
+        color: #999;
+        width: 80%;
+        left:20%;
+        transform: translate(10%,0)
+    }
+   .earn{
+       left: 50%;
+       transform: translate(100%,0)
+   }
+
+   .earn p{
+    font-size: 110%;
+    font-family: cursive;
+    text-align: center;
+    color: #999
+   }
+   .earn i{
+    font-size: 300%;
+    text-align: center;
+    left: 50%;
+    top: 0%;
+    transform: translate(300%,0%)
+}  
+.earn .btn-primary{
+    background-color: #4EAADE;
+    border-color: transparent;
+    border-radius: 4px;
+    font-weight: 500;
+}
+.numbers{
+    left: 20%;
+    transform: translate(5%,0)
+}
+.number i{
+    font-size: 55px;
+    color: #F98030;
+    }
+.number span{
+    font-size: 250%;
+    color: #002e5b;
+}
+.topics-text{
+    width: 95%;
+    left: 0%;
+    transform: translate(2%,0);
+    
+}
+.topics-text ul li{
+list-style-type: none;
+float: left;
+margin:10px;
+font-size: 140%;
+font-weight: 600;
+font-family: Arial, Helvetica, sans-serif;
+color: #474646;
+
+}

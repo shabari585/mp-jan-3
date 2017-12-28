@@ -1,0 +1,125 @@
+<app-header></app-header>
+<app-header1></app-header1>
+
+<div class="m-core">
+    <div class="manage-orders-core">
+      <h2 id="orders-title">MY ORDERS</h2>
+      <div class="my-gigs-index">
+        <button class="index-head">
+    Orders
+  </button>
+        <button class="index-item" id="completed-btn" (click)="get_orders('completed')">
+    Completed
+  </button>
+        <button class="index-item" id="progress-btn" (click)="get_orders('inprogress')">
+    In Progress
+  </button>
+        <button class="index-item" id="cancelled-btn" (click)="get_orders('cancelled')">
+    Cancelled
+  </button>
+        <button class="index-item selected-index" id="all-btn" (click)="get_orders('all')">
+    All
+  </button>
+      </div>
+      <div class="orders-div">
+        <div class="pay-summary">
+          <div class="pay-sum-items">
+            <div class="pay-ico-core">
+              <i class="fa fa-gift pay-sum-icons"></i>
+            </div>
+            <div class="pay-sum-core">
+              <div class="pay-num">8.520</div>
+              <div class="pay-desc">
+                <h3>Products Sold</h3>
+                <h4>In all Time</h4>
+              </div>
+            </div>
+          </div>
+          <div class="pay-sum-items">
+            <div class="pay-ico-core">
+              <i class="fa fa-gift pay-sum-icons"></i>
+            </div>
+            <div class="pay-sum-core">
+              <div class="pay-num">2.580</div>
+              <div class="pay-desc">
+                <h3>Products Sold</h3>
+                <h4>In this Month</h4>
+              </div>
+            </div>
+          </div>
+          <div class="pay-sum-items">
+            <div class="pay-ico-core">
+              <i class="fa fa-tag pay-sum-icons"></i>
+            </div>
+            <div class="pay-sum-core">
+              <div class="pay-num">$ 20</div>
+              <div class="pay-desc">
+                <h3>Total Sales</h3>
+                <h4>In all Time</h4>
+              </div>
+            </div>
+          </div>
+          <div class="pay-sum-items">
+            <div class="pay-ico-core">
+              <i class="fa fa-briefcase pay-sum-icons"></i>
+            </div>
+            <div class="pay-sum-core">
+              <div class="pay-num">$ 20</div>
+              <div class="pay-desc">
+                <h3>Total Earning</h3>
+                <h4>In all Time</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="orders-core">
+         
+
+
+
+            <div class="order-div">
+                <div class="order-img">
+                  <i style="font-size:25px;color:white;float:right;padding:15px;" class="fa fa-cog" (click)="open_drop()"></i>
+                  </div>
+                  <div style="width:45%;background-color:white;text-align:center;z-index:100;border:0.5px solid #999;top:-50%;float:right;transform:translate(0,-100%)" class="sales-drop">
+                    
+                      <li style="border-bottom:0.5px solid #ddd;list-style-type:none;font-size:85%;font-weight:450;line-height:35px;">Accept</li>
+                      <li  style="border-bottom:0.5px solid #ddd;list-style-type:none;font-size:85%;font-weight:450;line-height:35px;">Deliver</li>
+                      <li style="list-style-type:none;font-size:85%;font-weight:450;line-height:35px;">Cancel</li>
+                    
+                    </div>
+                <div class="text">
+                <h3>Management with Trello...</h3>
+                <div class="order-display">
+                  <p>Buyer:buyername &nbsp;|&nbsp;</p>
+                  <p>November 11, 2015 &nbsp;|&nbsp;</p>
+                  <p>Total:$46</p>
+                  </div>
+                </div><br><br>
+
+                <div class="progress1">
+                    <p>started</p>
+                    <p>in progress</p>
+                    <p>delivered</p>
+                     </div>
+
+                     <div class="progress progress2">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="10"
+                        aria-valuemin="0" aria-valuemax="100" style="width:30%;background-color:green;">
+                          
+                        </div>
+                      </div><br>
+              </div>
+
+
+
+
+
+              
+        </div>
+      </div>
+    </div>
+</div>
+
+  
+ 

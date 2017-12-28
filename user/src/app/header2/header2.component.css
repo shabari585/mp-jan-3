@@ -1,0 +1,33 @@
+.main-header1 {
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    flex-direction: column;
+    height: 11vh;
+    width: 100%;
+    top: 0;
+    background-color: #fff;
+    /* border-bottom: 1px solid rgba(0, 0, 1, 0.1); */
+  }
+  .main-header1 a {
+    position: relative;
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    float: left;
+    height: 100%;
+    width: auto;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .main-header1 .logo-img {
+    height: 90%;
+    width: auto;
+  }
+  

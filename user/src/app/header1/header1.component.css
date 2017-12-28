@@ -1,0 +1,17 @@
+/* navbar2   */
+.nav-ul{
+    left: 20%;
+    transform: translate(15%,0)
+}
+.nav-ul li{
+    float: left;
+    list-style-type: none;
+    padding:2px 15px;
+    color: #999;
+   
+  }
+  .nav2{
+      height: 7vh;
+      border-bottom: 0.5px solid #ddd;
+            
+  }

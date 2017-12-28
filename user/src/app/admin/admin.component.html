@@ -1,0 +1,556 @@
+<!doctype html>
+<html>
+  <body>
+    
+   
+<!-- header -->
+<header  style="background:#25424B" class="main-header1 visible-md visible-lg">
+    <div class="header-control w-control">
+      <a routerLink='/home'>
+        <img src="../assets/../assets/images/m_logo.png" alt="" class="logo-img">
+      </a>
+     
+      <ul class="horizantal-ul right-float-ul list-unstyled">
+        <li style="font-size:75%;color:white;font-weight:450">
+          Logged in as Admin
+        </li>
+        <li  style="font-size:75%;color:white;font-weight:450">&nbsp;|&nbsp;
+          Wed,Dec 25,2017
+        </li>
+        <li style="font-size:75%;color:white;font-weight:450">&nbsp;|&nbsp;
+         Logout
+        </li>
+      </ul>
+    </div>
+  </header><br><br><br>
+  <!-- header2 -->
+<header style="background:#666E73" class="nav2">
+    <nav class="navbar navbar-default">
+    <ul class="nav-ul">
+      <li>Home</li>
+      
+      <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Settings
+          </a>
+          <ul class="dropdown-menu">
+            <a class="dropdown-item" href="#">General Settings</a>
+            <a class="dropdown-item" href="#">Meta Settings</a>
+            <a class="dropdown-item" href="#">Static Pages</a>
+            <a class="dropdown-item" href="#">Payment Settings</a>
+            <a class="dropdown-item" href="#">Payment Packs</a>
+          </ul>
+        </li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Categiries
+            </a>
+            <ul class="dropdown-menu">
+              <a class="dropdown-item" href="#">Manage Categories</a>
+              <a class="dropdown-item" href="#">Add Category</a>
+              
+            </ul>
+          </li>
+          <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Gigs
+              </a>
+              <ul class="dropdown-menu">
+                <a class="dropdown-item" href="#">Manage Gigs</a>
+                <a class="dropdown-item" href="#">Validate Gigs</a>
+                <a class="dropdown-item" href="#">Delete Gigs</a>
+              </ul>
+            </li>
+      
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Orders
+                </a>
+                <ul class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Manage Orders</a>
+                  
+                </ul>
+              </li>
+              <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Payments
+                  </a>
+                  <ul class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Manage Payments</a>
+                    <a class="dropdown-item" href="#">Feature Gig Payments</a>
+                    <a class="dropdown-item" href="#">Clear Payments</a>
+                  </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Withdrawls
+                    </a>
+                    <ul class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Validate Withdrawls</a>
+                      
+                    </ul>
+                  </li>  
+                  
+                  <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Requests
+                      </a>
+                      <ul class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Manage Requests</a>
+                        <a class="dropdown-item" href="#">Validate Requests</a>
+                        
+                      </ul>
+                    </li>
+                    
+                    
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Members
+                        </a>
+                        <ul class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Manage Members</a>
+                         
+                        </ul>
+                      </li>
+                      
+                      <li class="dropdown">
+                          <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Reports
+                          </a>
+                          <ul class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Reported Messages</a>
+                            
+                          </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Conversations
+                            </a>
+                            <ul class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Manage Conversations</a>
+                              
+                            </ul>
+                          </li> 
+                          
+                          <li class="dropdown">
+                              <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Feedback
+                              </a>
+                              <ul class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Manage Feedback</a>
+                                <a class="dropdown-item" href="#">Add Fake Feedback</a>
+                                
+                              </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Ads
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <a class="dropdown-item" href="#">Standard Ads</a>
+                                  <a class="dropdown-item" href="#">Create Standard Ads</a>
+                                  
+                                </ul>
+                              </li>  
+                              
+                              
+                              <li class="dropdown">
+                                  <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Bans
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">IP Banning</a>
+                                    <a class="dropdown-item" href="#">Add IP</a>
+                                    <a class="dropdown-item" href="#">Banned Words</a>
+                                    <a class="dropdown-item" href="#">Add Word</a>
+                                    
+                                  </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Files
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <a class="dropdown-item" href="#">All Files</a>
+                                      <a class="dropdown-item" href="#">Conversation Files</a>
+                                      <a class="dropdown-item" href="#">Order Files</a>
+                                    </ul>
+                                  </li>
+                                  <li class="dropdown">
+                                      <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Referrals
+                                      </a>
+                                      <ul class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Manage Referrals</a>
+                                        <a class="dropdown-item" href="#">Validate Referrals</a>
+                                       </ul>
+                                    </li>
+                                    
+                                    
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Launch
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                          <a class="dropdown-item" href="#">Requisted Invites</a>
+                                        </ul>
+                                      </li>  
+                                      
+                                      <li class="dropdown">
+                                          <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Admins
+                                          </a>
+                                          <ul class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Manage Adiministrators</a>
+                                            <a class="dropdown-item" href="#">Create Adiministrator</a>
+                                          </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Local Bank
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                              <a class="dropdown-item" href="#">Validate Local Gig Payments</a>
+                                              <a class="dropdown-item" href="#">Validate Local Feature Payments</a>
+                                             </ul>
+                                          </li>
+                                                                                                          
+
+    </ul>
+    </nav>
+  </header>
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- <section>
+    <div class="w-control">
+        <div class="row">
+    <div class="col-lg-8 col-md-8 col-xs-12 ">
+        
+        <div class=" container1">
+        <h1><b>Statistics</b></h1>
+        </div>
+        </div>
+            
+            <div class="col-lg-4 col-md-4 col-xs-12 ">
+                <div class=" container1">
+        <h1><b>Statistics</b></h1>
+        </div>
+        </div>
+        </div>
+    </div>
+    </section><br><br>
+    
+<section>
+    <div class="w-control">
+        <div class="row ">
+    <div class="col-lg-8 col-md-8 col-xs-12 ">
+        <div class="chart">
+        <h1><b>Statistics</b></h1>
+        </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-4 col-xs-12 ">
+                <div class="chart">
+        <h1><b>Statistics</b></h1>
+                </div>
+        </div>
+        </div>
+    </div>
+    </section><br><br>
+    
+   <section class="mbl-income">
+    <div class="w-control">
+        <div class="row">
+    <div class="col-lg-8 col-md-8 col-xs-8 ">
+        <div class="row">
+        <div class="col-lg-4 col-md-4 col-md-12 ">
+            <div class="income">
+                <i style="font-size:50px;color:white;line-height:100px;" class="fa fa-university" aria-hidden="true"></i>
+                        <p>Total Income</p><hr/>
+            
+            <h1 class="divider text-center" style="color:white;font-size:25px;"><b>$ 38,733.21</b></h1><br>
+                    
+            </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-4 col-md-4 ">
+                <div class="sellers">
+                    <i style="font-size:50px;color:white;line-height:100px" class="fa fa-usd" aria-hidden="true"></i>
+                        <p>1121 SELLERS</p><hr/>
+                        
+            <h1 class="text-center" style="color:white;font-size:25px;"><b>$ 0.50</b></h1><br>
+                    
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-md-12 "></div>
+        </div>
+        
+        </div>
+            
+            <div class="col-lg-4 col-md-4 col-xs-12 ">
+                <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12 ">
+                    <div class="number">
+                        <i style="font-size:35px;color:#8dc53d;line-height:80px" class="fa fa-shopping-cart" aria-hidden="true"></i>     
+                   <p class="text-center" style="color:#8dc53d;font-size:23px;"><b>$ 124,288</b></p>
+                        
+                    </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-6 col-xs-12 ">
+                        <div class="number">
+                            <i style="font-size:35px;color:#00aced;line-height:80px" class="fa fa-percent" aria-hidden="true"></i>
+                        <p class="text-center" style="color:#00aced;font-size:23px;"><b>$ 21,257</b></p>
+                    </div>
+                    </div>
+                </div>
+        
+        </div>
+        </div>
+    </div>
+    </section><br><br> -->
+    
+    
+    <div class="container-fluid container2"><br><br>
+     
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-xs-12">
+            <div class="row">
+        
+            <table  class="table">
+            <tr style="background-color:#6f8992;color:white;">
+                <th>Gig Statistics</th>
+                <th></th>
+                </tr>
+                <tr>
+                <th style="background-color:#d1cfcf;">Summary</th>
+                    <th style="background-color:#d1cfcf;" class="text-center">Results</th>
+                </tr>
+                <tr style="border-bottom:1pt solid #d1cfcf;">
+                <td>Gigs Awaiting Validation</td>
+                    <td class="text-center">0</td>
+                </tr>
+                <tr style="border-bottom:1pt solid #d1cfcf;">
+                <td>New Gigs</td>
+                    <td class="text-center">0</td>
+                </tr>
+                <tr style="border-bottom:1pt solid #d1cfcf;">
+                <td>Total Gigs</td>
+                    <td class="text-center">2921</td>
+                </tr>
+            </table>
+            
+            </div><br>
+            
+            <div class="row">
+        <div class="col-xs-12">
+            <table class="table">
+            <tr style="background-color:#6f8992;color:white;">
+                <th>Gig Statistics</th>
+                <th></th>
+                </tr>
+                <tr>
+                <th style="background-color:#d1cfcf;">Summary</th>
+                    <th style="background-color:#d1cfcf ;" class="text-center">Results</th>
+                </tr>
+                <tr style="border-bottom:1pt solid #d1cfcf;">
+                <td>Gig Orders</td>
+                    <td class="text-center">3700</td>
+                </tr>
+                
+            </table>
+            </div>
+            </div><br>
+            
+            <div class="row">
+        <div class="col-xs-12">
+            <table class="table">
+            <tr style="background-color:#6f8992;color:white;">
+                <th>Request  Statistics</th>
+                <th></th>
+                </tr>
+                <tr>
+                <th style="background-color:#d1cfcf;">Summary</th>
+                    <th style="background-color:#d1cfcf ;" class="text-center">Results</th>
+                </tr>
+                <tr style="border-bottom:1pt solid #d1cfcf;">
+                <td>Requests Awaiting Validation	</td>
+                    <td class="text-center">0</td>
+                </tr>
+                
+                <tr style="border-bottom:1pt solid #d1cfcf;">
+                <td>Total Requests</td>
+                    <td class="text-center">159</td>
+                </tr>
+            </table>
+            </div>
+            </div>
+            
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-xs-12">
+         <div class="row">
+        <div class="col-xs-12">
+            <table class="table">
+            <tr style="background-color:#6f8992;color:white;">
+                <th>Category   Statistics</th>
+                <th></th>
+                </tr>
+                <tr>
+                <th style="background-color:#d1cfcf;">Summary</th>
+                    <th style="background-color:#d1cfcf ;" class="text-center">Results</th>
+                </tr>
+                <tr style="border-bottom:1pt solid #d1cfcf;">
+                <td>Categories</td>
+                    <td class="text-center">19</td>
+                </tr>
+                
+            </table>
+            </div>
+            </div><br>
+            
+            <div class="row">
+        <div class="col-xs-12">
+            <table class="table">
+            <tr style="background-color:#6f8992;color:white;">
+                <th>Advertisement  Statistics</th>
+                <th></th>
+                </tr>
+                <tr>
+                <th style="background-color:#d1cfcf;">Summary</th>
+                    <th style="background-color:#d1cfcf ;" class="text-center">Results</th>
+                </tr>
+                <tr style="border-bottom:1pt solid #d1cfcf;">
+                <td>Standard Advertisements</td>
+                    <td class="text-center">5</td>
+                </tr>
+                
+            </table>
+            </div>
+            </div><br>
+            
+            <div class="row">
+        <div class="col-xs-12">
+            <table class="table">
+            <tr style="background-color:#6f8992;color:white;">
+                <th>Member  Statistics</th>
+                <th></th>
+                </tr>
+                <tr>
+                <th style="background-color:#d1cfcf;">Summary</th>
+                    <th style="background-color:#d1cfcf ;" class="text-center">Results</th>
+                </tr>
+                <tr style="border-bottom:1pt solid #d1cfcf;">
+                <td>Total Members</td>
+                    <td class="text-center">8472</td>
+                </tr>
+                
+            </table>
+            </div>
+            </div><br>
+            
+            <div class="row">
+        <div class="col-xs-12">
+            <table class="table">
+            <tr style="background-color:#6f8992;color:white;">
+                <th>Payment  Statistics</th>
+                <th></th>
+                </tr>
+                <tr>
+                <th style="background-color:#d1cfcf;">Summary</th>
+                    <th style="background-color:#d1cfcf ;" class="text-center">Results</th>
+                </tr>
+                <tr style="border-bottom:1pt solid #d1cfcf;">
+                <td>Total Payments</td>
+                    <td class="text-center">3831</td>
+                </tr>
+                
+            </table>
+            </div>
+            </div><br><br>
+            
+        </div>
+        
+        
+        
+        
+        
+        <div class="col-lg-4 col-md-4 col-xs-12">
+         <div class="row">
+        <div class="col-xs-12">
+            <table class="table-responsive">
+            <tr style="background-color:#6f8992;color:white;">
+                <th>Last 10 Members</th>
+                <th></th>
+                </tr>
+                <tr>
+                <th style="background-color:#d1cfcf;">Username</th>
+                    <th style="background-color:#d1cfcf ;" class="text-center">E-Mail Address</th>
+                </tr>
+                <tr style="border-bottom:1pt solid #d1cfcf;">
+                <td>rajatheboi</td>
+                    <td class="text-center">conversetunic@gmail.com</td>
+                </tr>
+                <tr style="border-bottom:1pt solid #d1cfcf;">
+                <td>kanalab</td>
+                    <td class="text-center">tony@kanalab.com</td>
+                </tr>
+                <tr style="border-bottom:1pt solid #d1cfcf;">
+                <td>tutorman</td>
+                    <td class="text-center">leohokkanen@gmail.com</td>
+                </tr>
+                
+                <tr style="border-bottom:1pt solid #d1cfcf;">
+                <td>rahul980170</td>
+                    <td class="text-center">rahul980170@gmail.com</td>
+                </tr>
+                
+                <tr style="border-bottom:1pt solid #d1cfcf;">
+                <td>simohaji11</td>
+                    <td class="text-center">zinbebahy@gmail.com</td>
+                </tr>
+                
+                <tr style="border-bottom:1pt solid #d1cfcf;">
+                <td>jeb2431</td>
+                    <td class="text-center">jeb2431@yahoo.com</td>
+                </tr>
+                
+                <tr style="border-bottom:1pt solid #d1cfcf;">
+                <td>mykaufman</td>
+                    <td class="text-center">mykaufman@gmail.com</td>
+                </tr>
+                
+                <tr style="border-bottom:1pt solid #d1cfcf;">
+                <td>tomtit</td>
+                    <td class="text-center">tom@tit.com</td>
+                </tr>
+                
+                <tr style="border-bottom:1pt solid #d1cfcf;">
+                <td>admin20171015</td>
+                    <td class="text-center">admin20171015@yahoo.com</td>
+                </tr>
+                
+                <tr style="border-bottom:1pt solid #d1cfcf;">
+                <td>devwlr</td>
+                    <td class="text-center">Q2043987@mvrht.net</td>
+                </tr>
+            </table>
+            </div>
+            </div>   
+        </div>
+        </div>
+        
+        </div>    
+    <br><br>
+    </body>
+</html>

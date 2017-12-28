@@ -1,0 +1,77 @@
+#orders-title {
+    position: relative;
+    display: block;
+    text-align: left;
+    font-size: 190%;
+    color: #000;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+  
+  #orders-title::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
+    height: 5px;
+    width: 40px;
+    background-color: #F9BF3B;
+    color: #F9BF3B;
+  }
+  .feedback-text h4{
+      font-size: 100%;
+      font-weight: 800;
+  }
+  .feedback-text p{
+      font-size: 100%;
+
+  }
+  
+  .feed-img{
+      background-image: url("../../assets/images/gig.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      width: 60%;
+  }
+
+.feed-pop{
+    width: 50%;
+    height: auto;
+    background-color: white;
+    border: 0.5px solid #ddd;
+    
+}
+.feed-pop h3{
+    font-size: 125%;
+    font-weight: 800;
+} 
+.pop .btn-success{
+    float: right;
+    left:-50%;
+    transform: translate(-100%,0);
+    font-size: 80%;
+    font-weight: 450;
+}
+.text-area{
+    
+    width: 80%;
+    border-radius: 10px;
+}
+.feed-width{
+    width:100%;
+    left: 10%;
+    transform: translate(10%,0)
+}
+.continue p{
+    white-space: normal !important;
+}
+.continue .btn-success{
+    left: 50%;
+    transform: translate(130%,0);
+    font-size: 80%;
+    font-weight: 450;
+}
