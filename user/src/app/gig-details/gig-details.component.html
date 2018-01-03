@@ -1,5 +1,4 @@
 <app-header></app-header>
-
 <div class="w-control">
     <div class="container gig-detail">
         <div class="row">
@@ -44,8 +43,8 @@
    </div><br><br>
 
    <div class="row">
-<div class="col-lg-4 col-md-4 col-xs-4">
-    <div class="zoom">
+<div class="col-lg-4 col-md-4 col-xs-4" (click)="zoom('sta')">
+    <div class="zoom" id="sta">
         <div style="border-bottom:0.5px solid #999;background-color:#E9E9E9">
             <h4>ZOOM LITE</h4>
         </div>
@@ -55,8 +54,8 @@
     </div>
 </div>
 
-<div class="col-lg-4 col-md-4 col-xs-4">
-        <div class="zoom">
+<div class="col-lg-4 col-md-4 col-xs-4"  (click)="zoom('pre')">
+        <div class="zoom" id="pre">
             <div style="border-bottom:0.5px solid #999;background-color:#E9E9E9">
                 <h4>ZOOM LITE</h4>
             </div>
@@ -66,8 +65,8 @@
         </div>
     </div>
 
-    <div class="col-lg-4 col-md-4 col-xs-4">
-            <div class="zoom">
+    <div class="col-lg-4 col-md-4 col-xs-4" (click)="zoom('pro')">
+            <div class="zoom" id="pro">
                 <div style="border-bottom:0.5px solid #999;background-color:#E9E9E9">
                     <h4>ZOOM LITE</h4>
                 </div>
@@ -87,20 +86,20 @@
     <div class="col-lg-6 col-md-6 col-xs-6">
         <div class="sold-text">
             <div style="display:flex">
-                <i class="fa fa-clock-o"></i><span>Quick and Easy <br> Booking</span>
+                <i class="fa fa-clock-o"></i><span>&nbsp;&nbsp;Quick and Easy <br> &nbsp;&nbsp;Booking</span>
             </div>
             <div style="display:flex">
-                    <i class="fa fa-clock-o"></i><span>3.5 Million<br> Experiences Sold</span>
+                    <i class="fa fa-clock-o"></i><span>&nbsp;&nbsp;3.5 Million<br>&nbsp; Experiences Sold</span>
                 </div>
         </div>
     </div>
     <div class="col-lg-6 col-md-6 col-xs-6">
             <div class="sold-text">
-                <div style="display:flex;left:10%;transform:translate(20%,0)">
-                    <i class="fa fa-clock-o"></i><span>Quick and Easy <br> Booking</span>
+                <div style="display:flex;">
+                    <i class="fa fa-clock-o"></i><span>&nbsp;&nbsp;Quick and Easy <br> &nbsp;&nbsp;Booking</span>
                 </div>
                 <div style="display:flex">
-                        <i class="fa fa-clock-o"></i><span>3.5 Million<br> Experiences Sold</span>
+                        <i class="fa fa-clock-o"></i><span>&nbsp;&nbsp;3.5 Million<br> &nbsp;&nbsp;Experiences Sold</span>
                     </div>
             </div>
         </div>
@@ -131,20 +130,20 @@
             <div class="col-lg-6 col-md-6 col-xs-6">
                 <div class="sold-text">
                     <div style="display:flex">
-                        <i class="fa fa-clock-o"></i><span>Quick and Easy <br> Booking</span>
+                        <i class="fa fa-clock-o"></i><span>&nbsp;&nbsp;Quick and Easy <br> &nbsp;&nbsp;Booking</span>
                     </div>
                     <div style="display:flex">
-                            <i class="fa fa-clock-o"></i><span>3.5 Million<br> Experiences Sold</span>
+                            <i class="fa fa-clock-o"></i><span>&nbsp;&nbsp;3.5 Million<br>&nbsp; Experiences Sold</span>
                         </div>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-xs-6">
                     <div class="sold-text">
-                        <div style="display:flex;left:10%;transform:translate(20%,0)">
-                            <i class="fa fa-clock-o"></i><span>Quick and Easy <br> Booking</span>
+                        <div style="display:flex;">
+                            <i class="fa fa-clock-o"></i><span>&nbsp;&nbsp;Quick and Easy <br> &nbsp;&nbsp;Booking</span>
                         </div>
                         <div style="display:flex">
-                                <i class="fa fa-clock-o"></i><span>3.5 Million<br> Experiences Sold</span>
+                                <i class="fa fa-clock-o"></i><span>&nbsp;&nbsp;3.5 Million<br> &nbsp;&nbsp;Experiences Sold</span>
                             </div>
                     </div>
                 </div>
@@ -461,12 +460,12 @@
 
     <!-- team -->
 
-<h1 style="font-size:150%;font-weight:bold;color:#999">MEET THE TEAM</h1>
+<h1 style="font-size:150%;font-weight:bold;color:#999">MEET THE TEAM</h1><br>
 <div class="team">
     
     <img src="../../assets/images/gig.png" class="img-fluid" style="width:100px;height:100px;border-radius:50px"><p style="left:50%;top:-150%;transform:translate(8%,-350%)"><i style="color:green" class="fa fa-check"></i>Verified</p>
 
-    <p>Sara</p>
+    <span>Sara</span>
     <p>United Kingdom-Joined in August 2017</p>
     <button class="btn btn-success">Contact host</button>
 </div>
@@ -583,36 +582,6 @@
     
     </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!-- <div class="gig-f-vp">

@@ -158,7 +158,24 @@
     flex-wrap: nowrap;
     
   }
-  
+ 
+ .btm-auth{
+  border-radius:0px;
+  border-color:transparent;
+  background-color:#999;
+  color:white;
+  font-size:90%;
+  font-weight:500;
+  width:108px
+ } 
+
+.phone-icon{
+  border:0.5px solid #999;
+  width:35px;
+  height:auto;
+  border-radius:3px;
+  text-align:center
+}  
 
 
 /* menu after login   */

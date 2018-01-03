@@ -15,3 +15,7 @@
       border-bottom: 0.5px solid #ddd;
             
   }
+  .dropdown-menu{
+      background-color: white;
+      z-index: 10000;
+  }

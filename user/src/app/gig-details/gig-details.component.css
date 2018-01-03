@@ -72,6 +72,62 @@
 .zoom-rate p{
    line-height: 50px;
 }
+
+
+/* .zoom:hover {
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    border:1px solid green;
+} */
+
+
+.zoom {
+    height: 85px;
+    width: 85px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    
+}
+.zoom-after{
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.zoom-before{
+    height: 85px;
+    width: 85px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.zoom:before{
+    content: "";
+    display: none;
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(52,73,94,0.75);
+}
+
+
+
 .sold-text{
     width: 60%;
     padding: 10px;
@@ -190,7 +246,7 @@
   .reviews{
       top: 10%;
       transform: translate(0,10%);
-      height: 80vh;
+      height: 60vh;
       width: 100%;
       background-color: #F4F4F4;
   }

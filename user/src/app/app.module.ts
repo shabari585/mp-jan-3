@@ -154,18 +154,7 @@ const appRoutes: Routes = [
     path: 'feedback',
     component: FeedbackComponent
   },
-  {
-    path: 'password',
-    component: PasswordComponent
-  },
-  {
-    path: 'profile',
-    component: ProfileComponent
-  },
-  {
-    path: 'finance',
-    component: FinanceComponent
-  },
+  
   {
     path: 'account',
     component: AccountComponent
@@ -174,14 +163,51 @@ const appRoutes: Routes = [
     path: 'account-deleted',
     component: AccountDeletedComponent
   },
-  {
-    path: 'email-notifications',
-    component: EmailNotificationsComponent
-  },
+  
   {
     path: 'admin',
     component: AdminComponent
   },
+
+
+  {
+    path: 'settings',
+    component: SettingsComponent,
+    // canActivate: [AuthGuard],
+    children: [
+        {
+            path: '',
+            redirectTo: 'profile',
+            pathMatch: 'full',
+        },
+        {
+            path: 'account',
+            component: AccountComponent,
+            
+        },
+        {
+            path: 'profile',
+            component: ProfileComponent,
+            
+        },
+        {
+            path: 'password',
+            component: PasswordComponent,
+            
+        },
+        {
+            path: 'finance',
+            component: FinanceComponent,
+            
+        },
+        {
+            path: 'email-notifications',
+            component: EmailNotificationsComponent,
+           
+        },
+    ]
+},
+
   
 ]
 

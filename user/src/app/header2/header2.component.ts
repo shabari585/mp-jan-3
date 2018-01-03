@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { AppComponent } from "../app.component";
+
 @Component({
   selector: 'app-header2',
   templateUrl: './header2.component.html',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Header2Component implements OnInit {
 
-  constructor() { }
+  constructor(private app:AppComponent) { }
 
   ngOnInit() {
   }

@@ -29,14 +29,14 @@ border-radius: 0px;
 }
 .input-group{
     width:70%;
-    height:8vh;
+    height:52px;
     left: 30%;
     top: 40%;
     transform: translate(0%,40%) 
 }
 .input-group .input-group-addon{
     border-radius: 0px;
-    height:8vh;
+    height:52px;
     width:20%;
     background-color: #EE2E24;
     border-color: transparent;
@@ -315,9 +315,7 @@ border-radius: 0px;
     color: #002e5b;
 }
 .topics-text{
-    width: 95%;
-    left: 0%;
-    transform: translate(2%,0);
+   text-align: center
     
 }
 .topics-text ul li{

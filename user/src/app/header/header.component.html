@@ -36,18 +36,13 @@
       <li>
         <div class="dropdown">
           <button class="dropbtn" id="main-cat-btn"><i class="fa fa-bars" aria-hidden="true"></i> &nbsp; &nbsp;CATEGORIES </button>
-          <div class="dropdown-content"> -->
-
-
-
-            
-
-
-
+          <div class="dropdown-content">
 
            <table class="cat-tables bb no-padding">
               <tr>
-                <td class="bb no-padding"><a><span class="cat-btns b-all-btn" (click)="get_gigs('all')">Browse all Products</span></a></td>
+                <td class="bb no-padding"><a><span class="cat-btns b-all-btn" (click)="get_gigs('all')">Browse all Products</span></a>
+                
+                </td>
               </tr>
               <tr>
                 <td class="bb no-padding"><a><span class="cat-btns res-btn" (click)="get_gigs('rc')">Resumes and Cover Letters</span></a></td>
@@ -74,10 +69,10 @@
     </ul>
     <ul class="horizantal-ul right-float-ul list-unstyled">
       <li>
-        <input type="button" class="main-nav-btns" id="main-register-btn" (click)="showBackSignUp(true)" value="REGISTER">
+        <input type="button" class="main-nav-btns" id="main-register-btn" (click)="app.showBackSignUp(true)" value="REGISTER">
       </li>
       <li id="sign-in-li">
-        <input type="button" class="main-nav-btns" id="sign-in-btn" (click)="showBackLogin(true)" value="SIGN IN">
+        <input type="button" class="main-nav-btns" id="sign-in-btn" (click)="app.showBackLogin(true)" value="SIGN IN">
       </li>
     </ul>
   </div>

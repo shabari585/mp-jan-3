@@ -1,3 +1,95 @@
-<p>
-  settings works!
-</p>
+<app-header></app-header>
+<app-header1></app-header1><br>
+<div  class="container">
+<div class="row">
+<div style="background-color:white"  class="col-lg-3 col-md-3 col-xs-3">
+    <div style="background-color:#292C2E;" class="row">
+      <div class="col-lg-12 col-md-12 col-xs-12 profile">
+<img src="../../assets/images/gig.png" class="img-fluid" style="border-radius:35px;width:65px;height:65px">
+<h2>Pradeep</h2>
+<p>Professionals nec</p>
+<p>pkonduru@oulook.com</p><br>
+      </div>
+    </div><br>
+
+    <div class="row profile-about">
+        <div class="col-lg-6 col-md-6 col-xs-6">
+          <a routerLink='/settings'>
+          <i class="fa fa-user-o"></i>
+          <span>Profile</span>
+          </a>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-xs-6">
+            <i style="float:right;color:green" class="fa fa-check-circle"></i>
+            
+          </div>
+    </div><br>
+
+    <div class="row profile-about">
+        <div class="col-lg-6 col-md-6 col-xs-6">
+            <a routerLink='/settings/password'>
+          <i class="fa fa-user-o"></i>
+          <span>Password</span>
+          </a>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-xs-6">
+            <i style="float:right;color:green" class="fa fa-check-circle"></i>
+            
+          </div>
+    </div><br>
+
+    <div class="row profile-about">
+        <div class="col-lg-6 col-md-6 col-xs-6">
+            <a routerLink='/settings/finance'>
+          <i class="fa fa-user-o"></i>
+          <span>Payment & Financials</span>
+          </a>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-xs-6">
+            <i style="float:right;color:green" class="fa fa-check-circle"></i>
+            
+          </div>
+    </div><br>
+
+    <div class="row profile-about">
+        <div class="col-lg-6 col-md-6 col-xs-6">
+            <a routerLink='/settings/account'>
+          <i class="fa fa-user-o"></i>
+          <span>Account</span>
+          </a>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-xs-6">
+            <i style="float:right;color:green" class="fa fa-check-circle"></i>
+            
+          </div>
+    </div><br>
+
+    <div class="row profile-about">
+        <div class="col-lg-6 col-md-6 col-xs-6">
+            <a routerLink='/settings/email-notifications'>
+          <i class="fa fa-user-o"></i>
+          <span>Email Notifications</span>
+          </a>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-xs-6">
+            <i style="float:right;color:green" class="fa fa-check-circle"></i>
+            
+          </div>
+    </div><br>
+  </div>
+
+
+<div  class="col-lg-9 col-md-9 col-xs-12">
+      <router-outlet></router-outlet>
+  </div>
+  </div>
+</div>
+
+  
+
+ 

@@ -71,7 +71,7 @@
 }
 .continue .btn-success{
     left: 50%;
-    transform: translate(130%,0);
+    transform: translate(150%,0);
     font-size: 80%;
     font-weight: 450;
 }

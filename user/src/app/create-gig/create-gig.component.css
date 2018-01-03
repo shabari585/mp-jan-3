@@ -410,6 +410,7 @@ body {
   }
   .td-align-right {
     text-align: right !important;
+    
   }
   .main-c-gig {
     text-align: center;
@@ -424,7 +425,7 @@ body {
     padding: 10px;
   }
   .main-c-gig table .c-gig-inputs1 {
-    width: 18vw;
+    width: 20.2vw;
     min-height: 35px;
     vertical-align: middle;
     border: 1px solid rgba(0, 0, 0, 0.2) !important;
@@ -434,7 +435,7 @@ body {
     transform: translate(15%,0)
   }
   .main-c-gig table .c-gig-inputs {
-    width: 40vw;
+    width: 41.7vw;
     min-height: 35px;
     vertical-align: middle;
     border: 1px solid rgba(0, 0, 0, 0.2) !important;
@@ -868,6 +869,20 @@ body {
     border-top: transparent;
   }
   /* c-gig-four*/
+.fa-picture-o{
+  color:#E9E9E9;
+  font-size:400%;
+  text-align:center;
+  top:50%;
+  transform:translate(0,50%)
+}
+
+.img-div p{
+  top:50%;
+  transform:translate(30%,50%);
+  color:#999
+}
+  
   .portfolio-pics-div,
   .gig-video-div,
   .upload-gig-imgs-div {
@@ -876,7 +891,7 @@ body {
     display: block;
     padding: 20px 5px;
     background-color: #f7f7f7;
-    overflow: auto;
+    overflow: hidden;
   }
   .portfolio-pics-div h4,
   .gig-video-div h4 {

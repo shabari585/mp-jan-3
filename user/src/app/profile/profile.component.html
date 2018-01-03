@@ -1,13 +1,10 @@
-<app-header></app-header>
-<app-header1></app-header1>
+
 
 <div class="w-control">
     <div class="container">
       <div  class="row">
-        <app-settings-profile></app-settings-profile>
-  
-
-
+        
+        
 <div class="col-lg-9 col-md-9 col-xs-12">
 <div class="r-f-div">
     <h3 class="p-need headings">
@@ -23,10 +20,10 @@
         <form method="POST" action="" enctype="multipart/form-data">
           <div class="p-p-div-pic">
             <img src="http://localhost:3000{{user_img}}" id="change-p-p">
-            <label class="custom-p-p" for="c-p-p">CHOOSE PHOTO</label>
+            <label style="font-size:80%;color:#999;" class="custom-p-p" for="c-p-p">CHOOSE PHOTO</label>
             <input type="file" value="CHOOSE PHOTO" id="c-p-p" name="c-p-p" (change)="fileChange($event)" accept=".jpg,.png"><br>
            
-            <p>This photo is your identity on fiverr<br> and appears on your profile and gigs.</p>
+            <p>This photo is your identity on fiverr and appears on your profile and gigs.</p><br>
           </div>
           <div class="name-div p-need">
             <div class="p-l-f-div">
@@ -44,42 +41,20 @@
               <input type="text" id="u-l-name" name="u-l-name" value="" >
             </div>
           </div>
-          <div class="name-div p-need">
-            <!-- <div class="p-l-f-div">
-              <span class="p-f-titles">Designation*</span><br>
-              <input type="text" id="u-designation" name="u-designation" value="">
-            </div> -->
-            <!-- <div class="p-l-f-div">
-              <span class="p-f-titles">Email*</span><br>
-              <input type="text" id="u-email" name="u-email" value="" >
-            </div>
-            <div class="p-l-f-div">
-                <span class="p-f-titles">Designation*</span><br>
-                <input type="text" id="u-designation" name="u-designation" value="" >
-              </div> -->
-          </div>
-          
+         
           <div class="name-div p-need">
             <span class="p-f-titles">Country*</span><br>
             <input type="text" id="u-skills" name="u-skills" value="" >
           </div>
          
-          <!-- <div class="address-div p-need">
-            <span class="p-f-titles">Address*</span><br>
-            <input type="text" id="u-address" name="u-address" value=""  ><br>
-            <span class="p-f-titles">City*</span><br>
-            <input type="text" id="u-city" name="u-city" value=""  ><br>
-            <span class="p-f-titles">Country*</span><br>
-            <input type="text" id="u-country" name="u-country" value=""  ><br>
-          </div> -->
-          <hr>
+         
           <div class="p-need">
             <h4 id="s-ab-you-title">SOMETHING ABOUT YOU (English)<br>(150-300 characters)</h4>
-            <textarea id="s-ab-you" name="s-ab-you" style="resize:none" maxlength="300"  ></textarea>
-            <div class="clear-both"></div>
-            <span class="char-count"><span id="char-now"></span>/300 MAX</span>
-          </div>
-          <hr>
+            <textarea style="float:right;left:50%;transform:translate(100%,0)" id="s-ab-you" name="s-ab-you" style="resize:none" maxlength="300"  ></textarea>
+            <!-- <div class="clear-both"></div> -->
+            
+          </div><span style="float:right" class="char-count"><span id="char-now"></span>/300 MAX</span><br>
+         
           <div class="save-btn-area">
             <input type="submit" class="save-button" value="Save Settings" (click)="saveUser()">
           </div>

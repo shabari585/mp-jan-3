@@ -524,7 +524,7 @@
   .about-container {
     position: relative;
     display: block;
-    top: 11vh;
+    /* top: 11vh; */
     background-color: #fff;
     height: auto;
     width: 100%;

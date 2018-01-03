@@ -49,11 +49,12 @@
 
           
           <table>
+
             <tr style="float:left">
               <td class="td-align-right">
                 <h4 style="font-size:100%">Category</h4>
               </td>
-              <td >
+              <td  style="left:20%;transform:translate(2%,0)">
                 <select class="c-gig-inputs1" id="c-gig-cat" name="category" >
                   <option disabled="true">Choose your Category</option>
                   <option value="rc">Resumes and cover letters</option>
@@ -80,7 +81,7 @@
               <td class="td-align-right">
                 <h4>Title</h4>
               </td>
-              <td style="left:20%;transform:translate(7%,0)">
+              <td style="left:20%;transform:translate(13%,0)">
                 <input type="text" id="title" name="title" class="c-gig-inputs" maxlength="80" value="" >
               </td>
             </tr>
@@ -88,8 +89,8 @@
               <td class="td-align-right">
                 <h4>Description</h4>
               </td>
-              <td>
-                <textarea class="c-gig-inputs" id="c-gig-desc" name="description" ></textarea>
+              <td  style="left:10%;transform:translate(3%,0)">
+                <textarea class="c-gig-inputs textarea1" id="c-gig-desc" name="description" ></textarea>
               </td>
             </tr>
             <tr style="float:left">
@@ -193,7 +194,7 @@
         </div>
       </div>
       <!--c-gig-two-->
-      <div style="display:none" class="c-gig-divs" id="c-gig-two">
+      <div style="display:block" class="c-gig-divs" id="c-gig-two">
         <div class="two-helpers" id="package-cost-helper">
           <h2>Package cost</h2>
           <h5>Define cost per each package.</h5>
@@ -252,7 +253,7 @@
           </div>
         <div class="packages">
           <div class="packages-div">
-            <table class="packages-table table-responsive table1">
+            <table class="packages-table  table1">
               <tr>
                 <td class="left-t-header" rowspan="4"></td>
                 <td class="left-t-header"><span class="package-name"><h3>STANDARD</h3></span></td>
@@ -349,7 +350,7 @@
         </div>
       </div>
       <!-- c-gig-three-->
-      <div style="display:none" class="c-gig-divs" id="c-gig-three">
+      <div style="display:block" class="c-gig-divs" id="c-gig-three">
         <div class="three-helpers" id="extra-helper">
           <h2>Extras</h2>
           <h5>Extras that you provide with each package with delivery time and cost.</h5>
@@ -449,7 +450,7 @@
         </div>
       </div>
       <!-- c-gig-four-->
-      <div style="display:none" class="c-gig-divs" id="c-gig-four">
+      <div style="display:block" class="c-gig-divs" id="c-gig-four">
         <div class="four-helpers" id="img-helper">
           <h2>Gig Images</h2>
           <h5>Make sure you upload no more than 3 images. Extra images will just be ignored.</h5>
@@ -485,12 +486,12 @@
           <span class="pick-one-head" style="color:#666;font-size:120%; display:none">Select one image frome the following as your gig's main image.</span>
           <hr id="pic-hr">
 
-          <div style="overflow:hidden" class="row">
+          <div class="row">
             <div style="left:2%" class="col-lg-12 col-md-12 col-xs-12">
               <div class="row">
                 <div  class="col-lg-3 col-md-3 col-xs-12">
-                 <div style="border:0.5px solid #999;text-align:center;height:25vh" class="img-div">
-                    <i class="fa fa-camera" aria-hidden="true" style="color:#E9E9E9;font-size:400%"></i> <br><br>
+                 <div style="border:0.5px solid #999;text-align:center;width:100%;height:25vh;text-align:center" class="img-div">
+                    <i class="fa fa-picture-o" aria-hidden="true"></i> <br><br>
                     <div style="width:60%">
                         <p>Add a Photo</p>
                     </div>
@@ -500,7 +501,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <div style="border:0.5px solid #999;text-align:center;height:25vh" class="img-div">
+                    <div style="border:0.5px solid #999;text-align:center;width:100%;height:100%" class="img-div">
                        <i class="fa fa-picture-o" aria-hidden="true" style="color:#E9E9E9;font-size:400%"></i> <br><br>
                        <div style="width:60%">
                            <p>Add a Photo</p>
@@ -511,7 +512,7 @@
                    </div>
 
                    <div class="col-lg-3 col-md-3 col-xs-12">
-                      <div style="border:0.5px solid #999;text-align:center;height:25vh" class="img-div">
+                      <div style="border:0.5px solid #999;text-align:center;width:100%;height:100%" class="img-div">
                          <i class="fa fa-picture-o" aria-hidden="true" style="color:#E9E9E9;font-size:400%"></i> <br><br>
                          <div style="width:60%">
                              <p>Add a Photo</p>
@@ -525,8 +526,8 @@
 
               <div class="row">
                   <div  class="col-lg-3 col-md-3 col-xs-12">
-                   <div style="border:0.5px solid #999;text-align:center;height:25vh" class="img-div">
-                      <i class="fa fa-camera" aria-hidden="true" style="color:#E9E9E9;font-size:400%"></i> <br><br>
+                   <div style="border:0.5px solid #999;text-align:center;width:100%;height:25vh" class="img-div">
+                      <i class="fa fa-picture-o" aria-hidden="true" style="color:#E9E9E9;font-size:400%"></i> <br><br>
                       <div style="width:60%">
                           <p>Add a Photo</p>
                       </div>
@@ -536,7 +537,7 @@
                   </div>
   
                   <div class="col-lg-3 col-md-3 col-xs-12">
-                      <div style="border:0.5px solid #999;text-align:center;height:25vh" class="img-div">
+                      <div style="border:0.5px solid #999;text-align:center;width:100%;height:100%" class="img-div">
                          <i class="fa fa-picture-o" aria-hidden="true" style="color:#E9E9E9;font-size:400%"></i> <br><br>
                          <div style="width:60%">
                              <p>Add a Photo</p>
@@ -547,7 +548,7 @@
                      </div>
   
                      <div class="col-lg-3 col-md-3 col-xs-12">
-                        <div style="border:0.5px solid #999;text-align:center;height:25vh" class="img-div">
+                        <div style="border:0.5px solid #999;text-align:center;width:100%;height:100%" class="img-div">
                            <i class="fa fa-picture-o" aria-hidden="true" style="color:#E9E9E9;font-size:400%"></i> <br><br>
                            <div style="width:60%">
                                <p>Add a Photo</p>
@@ -620,7 +621,7 @@
         </div> -->
       </div>
       <!-- c-gig-five-->
-      <div style="display:none" class="c-gig-divs" id="c-gig-five">
+      <div style="display:block" class="c-gig-divs" id="c-gig-five">
         <div class="c-gig-title">
           <table>
             <tr>
@@ -658,7 +659,7 @@
 
       <!-- c-gig-6 -->
 
-      <div style="display:none" class="c-gig-divs" id="c-gig-five">
+      <div style="display:block" class="c-gig-divs" id="c-gig-five">
           <div class="c-gig-title">
             <table>
               <tr>
@@ -693,7 +694,7 @@
           <div class="almost-there-core">
              
             <div style="background-color:#F7F7F7" class="almost-there-div1">
-              <p style="text-align:left;float:left">REQUIREMENT #1</p><br>
+              <p style="text-align:left;float:left;padding-top:10px;">REQUIREMENT #1</p><br>
               <div class="almost-there-div2"><br>
 <p>I need a copy of your existing CV plus any new details you may have </p><br>
 <p>I need a copy of your existing CV plus any new details you may have </p><br>

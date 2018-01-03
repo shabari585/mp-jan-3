@@ -324,8 +324,8 @@
 
 /* new order */
 .order-div{
-    height: auto;
-    width: 40%;
+    height: 400px;
+    width: 300px;
     border: 0.5px solid #ddd;
     
 }
@@ -334,7 +334,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 25vh;
+    height: 45%;
     width: 100%;
    
 }

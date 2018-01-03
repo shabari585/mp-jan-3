@@ -168,7 +168,7 @@ input[type="checkbox"]:checked+label span {
     display: -webkit-flex;
     align-items: center;
     -webkit-align-items: center;
-    margin: 11vh auto 15px auto;
+    /* margin: 11vh auto 15px auto; */
     width: 100vw;
     height: 40vh;
     background-image: url("../../assets/images/gig.png");

@@ -45,24 +45,271 @@
   </div>
 <!--SIDE HEADER ENDS HERE-->
 
-<div>
 
-  <div id="dark-back" style="display:none">
+
+
+<div *ngIf='showDarkBack'>
+
+  <div id="dark-back">
     <i class="fa fa-times close-mark" aria-hidden="true" (click)="closeShowBack(true)"></i>
     <h2 id="db-main-head">Market place</h2>
     <h3 id="db-main-caption">Universal access to the world's best market place</h3>
     <div class="dark-core">
       <div class="dark-index">
         <ul id="dark-ul">
-          <li id="login-trig-btn" (click)='showBackLogin(true)'>LOG IN</li>
+          <li id="login-trig-btn"  (click)='showBackLogin(true)'>LOG IN</li>
           <li id="signup-trig-btn" (click)='showBackSignUp(true)'>SIGN UP</li>
         </ul>
       </div>
+
+
+
+
+<div class="container-fluid" style="background-color:#EAEAEA;height:85%;border-radius: 3px;display:block">
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-xs-12">
+        <div style="width:300px;height:110%;top:-50%;transform:translate(0,-5%);background-color:white;border-radius: 3px;z-index:1000;">
+
+          <!-- login -->
+
+          <div *ngIf='showLogin'>
+            <div  class="login-div">
+                <div class="l-t-icon">
+          
+                </div>
+                <h3 id="login-head">LOGIN TO RESTORED</h3>
+                <input type="email" id="d-login-email" placeholder="Email">
+                <span class="err" id="login-email-err"style="color:red"></span>
+                <input type="password" id="d-login-pwd" name="name" placeholder="Password">
+                <a id="forgot-pad-btn" (click)="showFp(true)">Forgot?</a>
+                <p class="err" id="login-err"style="color:red"></p>
+                <button id="login-submit-btn" (click)="LoginSubmit(loginEmailInput,loginPasswordInput)">LOGIN</button>
+                <h5 style="font-size:90%" class="nor">OR</h5>
+  
+                
+                <div class="social-icons">
+                  <h5 style="font-size:80%;color:#999">Sign in with</h5>
+                  
+                  <ul>
+                    <li class="facebook-icon" style="float:left;padding:7px 10px"><i class="fa fa-facebook"></i></li>
+                    <li class="google-icon" style="float:left;padding:7px 10px"><i class="fa fa-google"></i></li>
+                    <li class="linkedin-icon" style="float:left;padding:7px 10px"><i class="fa fa-linkedin"></i></li>
+                  </ul>
+                 
+                </div>
+  
+                <div class="join-now">
+                  <hr>
+                  <p>Not a member yet? <span style="color:green">Join now</span></p>
+                </div>
+                
+              </div>
+            </div>  
+
+
+
+
+
+
+              <!-- register -->
+
+        <div *ngIf='showSignUp'>
+          
+            <div class="signup-div">
+              <div class="l-t-icon">
+        
+              </div>
+              <h3 id="signup-head">CREATE YOUR ACCOUNT</h3>
+              
+  
+  
+  
+              <table id="db-radio-table">
+                <tr>
+                  <td>
+                    <button (click)="role('author')" type="btn btn-primary btn-sm btm-auth" id="author" name="char" value="client"><span style="padding:10px">I'am Author</span></button>
+                  
+                      <button (click)="role('client')"  type="btn btn-primary btn-sm btm-auth" id="client" name="char" value="client"><span style="padding:10px">I'am Client</span></button>
+                    </td>
+                  
+                </tr>
+              </table>
+              
+                <input type="text" id="d-signup-f-name" placeholder="Full Name">
+                
+              
+              
+               <input type="text" id="d-signup-email" placeholder="Email">
+              <input type="password" name="name" id="d-signup-pwd" placeholder="Password">
+              
+              <span class="form-err signup-err" id="serr"></span> 
+  
+              <button id="signup-submit-btn" (click)="SignUp()">SIGN UP</button>
+  
+  
+              <h5 class="nor">OR</h5>
+  
+  
+              <div class="social-icons">
+                  <h5 style="font-size:80%;color:#999">Sign in with</h5>
+                  
+                  <ul style="float:right">
+                    <li class="facebook-icon" style="float:left;padding:7px 10px"><i class="fa fa-facebook"></i></li>
+                    <li class="google-icon" style="float:left;padding:7px 10px"><i class="fa fa-google"></i></li>
+                    <li class="linkedin-icon" style="float:left;padding:7px 10px"><i class="fa fa-linkedin"></i></li>
+                  </ul>
+                 
+                </div><br>
+  
+                <p style="font-size:70%;text-align:justify;left:50%;transform:translate(10%,0)">By signing up you agree to our <a href="#">privacy policy</a><br> and <a href="#">terms of use</a></p>
+            </div>
+  
+          </div> 
+
+
+
+<!-- forgot password -->
+
+
+<div *ngIf='showFpDiv'>
+        
+    <div class="fp-div">
+      <div class="l-t-icon">
+
+      </div>
+      <h3 id="fp-head">FORGOT PASSWORD</h3>
+      <h4 id="fp-p">Enter your email below and we'll send you the instructions on how to generate a new password.</h4>
+      <input type="email" id="d-fp-email" placeholder="Enter your email address"> 
+      <!-- <p class="form-err" id="prop-email-f-er">*Proper Email is required.</p>
+      <p class="form-err" id="not-email-f-er">*That email is not registered with us.</p> -->
+      <button id="fp-send-btn" (click)='showSentfp(true)'>SEND</button>
+      <a style="float:left;font-size:70%;text-decoration:underline;left:15%;transform:translate(55%,0)" href="">Back to Login</a><br><br>
+
+      <div style="background-color:#DFF0D8;width:77%;height:auto;left:5%;transform:translate(15%,0);border-radius:5px;" class="text-p">
+        <p style="color:green;font-size:80%;padding:10px;
+        white-space:normal;text-align:justify;">Reset request sent. Please check your inbox for verification email</p>
+      </div>
+    </div>
+
+  </div> 
+
+
+  <div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div> 
+
+
+
+
+        
+
+
+
+
+
+    </div>
+
+
+<div class="col-lg-8 col-md-8 col-xs-12"><br>
+    <div class="dark-side">
+        <div class="dark-icos">
+          <img src="../../assets/images/dbone.jpg" class="dbimgs">
+          <div class="dbico-core"><br>
+            <h2 class="dbico-htwo">
+              30 DAYS MONEY BACK GUARANTEE
+            </h2>
+            <p class="dbico-p">
+              We are fairly small, flexible design studio that  designs for print and web. We work flexibly with clients.
+            </p>
+          </div>
+        </div>
+        <div class="dark-icos">
+            <img src="../assets/img/dbthree.jpg" class="dbimgs">
+            <div class="dbico-core"><br>
+              <h2 class="dbico-htwo">
+                24/7 DEDICATED CUSTOMER SUPPORT
+              </h2>
+              <p class="dbico-p">
+                We are fairly small, flexible design studio that  designs for print and web. We work flexibly with clients.
+              </p>
+            </div>
+          </div>
+        <div class="dark-icos">
+          <img src="../assets/img/dbthree.jpg" class="dbimgs">
+          <div class="dbico-core"><br>
+            <h2 class="dbico-htwo">
+              24/7 DEDICATED CUSTOMER SUPPORT
+            </h2>
+            <p class="dbico-p">
+              We are fairly small, flexible design studio that  designs for print and web. We work flexibly with clients.
+            </p>
+          </div>
+        </div>
+        <div class="dark-icos">
+          <img src="../assets/img/dbfour.jpg" class="dbimgs">
+          <div class="dbico-core"><br>
+            <h2 class="dbico-htwo">
+              100% SECURED PAYMENT GATEWAY
+            </h2>
+            <p class="dbico-p">
+              We are fairly small, flexible design studio that  designs for print and web. We work flexibly with clients.
+            </p>
+          </div>
+        </div><br>
+
+
+        <div class="dark-icos">
+          <div class="phone-icon">
+            <i style="padding:5px;font-size:20px" class="fa fa-phone"></i></div>
+            <div class="dbico-core"><br>
+              <h2 class="dbico-htwo1">
+                CALL FOR SUPPORT
+              </h2>
+              <p class="dbico-p1">
+               7894561230
+              </p>
+            </div>
+          </div>
+        </div> 
+
+</div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
       
       <div>
-        <div class="dark-side" >
+        <!-- <div class="dark-side">
           <div class="dark-icos">
-            <img src="../assets/img/dbone.jpg" class="dbimgs">
+            <img src="../../assets/images/dbone.jpg" class="dbimgs">
             <div class="dbico-core"><br>
               <h2 class="dbico-htwo">
                 30 DAYS MONEY BACK GUARANTEE
@@ -105,12 +352,65 @@
               </p>
             </div>
           </div>
-        </div>
+
+
+
+
+
+          <div loop>
+
+
+            <div style="display:none" class="login-div">
+                <div class="l-t-icon">
+          
+                </div>
+                <h3 id="login-head">LOGIN TO RESTORED</h3>
+                <input type="email" id="d-login-email" placeholder="Email">
+                <span class="err" id="login-email-err"style="color:red"></span>
+                <input type="password" id="d-login-pwd" name="name" placeholder="Password">
+                <a id="forgot-pad-btn" (click)="showFp(true)">Forgot?</a>
+                <p class="err" id="login-err"style="color:red"></p>
+                <button id="login-submit-btn" (click)="LoginSubmit(loginEmailInput,loginPasswordInput)">LOGIN</button>
+                <h5 style="font-size:90%" class="nor">OR</h5>
+  
+                
+                <div class="social-icons">
+                  <h5 style="font-size:80%;color:#999">Sign in with</h5>
+                  
+                  <ul>
+                    <li class="facebook-icon" style="float:left;padding:7px 10px"><i class="fa fa-facebook"></i></li>
+                    <li class="google-icon" style="float:left;padding:7px 10px"><i class="fa fa-google"></i></li>
+                    <li class="linkedin-icon" style="float:left;padding:7px 10px"><i class="fa fa-linkedin"></i></li>
+                  </ul>
+                 
+                </div>
+  
+                <div class="join-now">
+                  <hr>
+                  <p>Not a member yet? <span style="color:green">Join now</span></p>
+                </div>
+                
+              </div>
+        </div> 
+
+
+
+
+
+
+
+
+
+
+
+        </div> -->
 
 
 
                   <!-- login page uncomment -->
-        <div loop>
+
+
+        <!-- <div loop>
 
 
           <div style="display:none" class="login-div">
@@ -144,12 +444,12 @@
               </div>
               
             </div>
-      </div> 
+      </div>  -->
 
 
 
 
-        <div>
+        <!-- <div>
           
           <div class="signup-div">
             <div class="l-t-icon">
@@ -208,13 +508,13 @@
               <p style="font-size:70%;text-align:justify;left:50%;transform:translate(10%,0)">By signing up you agree to our <a href="#">privacy policy</a><br> and <a href="#">terms of use</a></p>
           </div>
 
-        </div> 
+        </div>  -->
 
       </div>
 
 
       <!-- UNCOMMENT AFTER -->
-       <div>
+       <!-- <div>
         
         <div class="fp-div">
           <div class="l-t-icon">
@@ -223,8 +523,7 @@
           <h3 id="fp-head">FORGOT PASSWORD</h3>
           <h4 id="fp-p">Enter your email below and we'll send you the instructions on how to generate a new password.</h4>
           <input type="email" id="d-fp-email" placeholder="Enter your email address"> 
-          <!-- <p class="form-err" id="prop-email-f-er">*Proper Email is required.</p>
-          <p class="form-err" id="not-email-f-er">*That email is not registered with us.</p> -->
+          
           <button id="fp-send-btn" (click)='showSentfp(true)'>SEND</button>
           <a style="float:left;font-size:70%;text-decoration:underline;left:15%;transform:translate(55%,0)" href="">Back to Login</a><br><br>
 
@@ -234,10 +533,10 @@
           </div>
         </div>
 
-      </div> 
+      </div>  -->
 
 
-      <div>
+      <div *ngIf='showFpSent'>
 
         <div class="f-fp-div">
           <div class="l-t-icon">

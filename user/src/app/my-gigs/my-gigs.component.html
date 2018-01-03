@@ -1,26 +1,27 @@
 <!doctype html>
 <html>
-        <app-header></app-header>
+        <app-header></app-header><br>
         <app-header1></app-header1>
-    <body><br><br><br><br>
-        <div class="container"><br><br>
+    <body>
+        <div class="container "><br><br>
             <h2 id="orders-title">My Gigs</h2>
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-xs-12 orders">
-                        
+            <div class="row ">
+                <div class="col-lg-3 col-md-3 col-xs-12">
+                   <div class="orders">     
                    <h4>Orders</h4>
                    <ul>
-                       <li (click)="go_to_gig('completed')" style="cursor:pointer">Completed</li>
+                       <li (click)="go_to_gig('completed')" id="my-gig-drop">Completed</li>
                        <li (click)="go_to_gig('inprogress')" style="cursor:pointer">In Progress</li>
                        <li (click)="go_to_gig('cancelled')" style="cursor:pointer">Cancelled</li>
                        <li (click)="go_to_gig('all')" style="cursor:pointer">All</li>
                    </ul>
+                   </div>
                 </div>
                 
-                <div class="col-lg-9 col-md-9 col-xs-12">
+                <div class="col-lg-9 col-md-9 col-xs-12 my-gig-container">
 
-                  <div class="row">
-                <div class="col-lg-4 col-md-4 col-xs-12">
+                  <div class="row my-gigs-row">
+               <div class="gig1">
                   <div style="border:1px dashed #ddd">
                     <div style="background-color:#F5F5F5" class="order-div">
                         <div class="order-img">
@@ -36,10 +37,11 @@
                               
                         </div>
       </div>
+      </div>
                       </div> 
-                </div>
+                
 
-                 <div class="col-lg-4 col-md-4 col-xs-12">
+                 <div class="gig1">
                     <div class="order-div">
                         <div class="order-img">
                             <i style="font-size:25px;color:white;float:right;padding:15px;" class="fa fa-cog" (click)="open_drop()"></i>
@@ -62,17 +64,17 @@
  
                       </div>
 
-                      <div style="width:45%;background-color:white;text-align:center;z-index:100;border:0.5px solid #999;top:-50%;float:right;transform:translate(0,-260%)" class="sales-drop">
+                      <div  class="sales-drop">
                     
-                          <li style="border-bottom:0.5px solid #ddd;list-style-type:none;font-size:85%;font-weight:450;line-height:35px;">Accept</li>
-                          <li  style="border-bottom:0.5px solid #ddd;list-style-type:none;font-size:85%;font-weight:450;line-height:35px;">Deliver</li>
-                          <li style="list-style-type:none;font-size:85%;font-weight:450;line-height:35px;">Cancel</li>
+                          <li id="gig-drop">Accept</li>
+                          <li  id="gig-drop">Deliver</li>
+                          <li id="gig-drop1">Cancel</li>
                         
                         </div>
                  </div>
 
 
-                 <div class="col-lg-4 col-md-4 col-xs-12">
+                 <div class="gig1">
                     <div class="order-div">
                         <div class="order-img">
                             <i style="font-size:25px;color:white;float:right;padding:15px;" class="fa fa-cog" (click)="open_drop()"></i>
@@ -95,11 +97,11 @@
  
                       </div>
 
-                      <div style="width:45%;background-color:white;text-align:center;z-index:100;border:0.5px solid #999;top:-50%;float:right;transform:translate(0,-260%)" class="sales-drop">
+                      <div  class="sales-drop">
                     
-                          <li style="border-bottom:0.5px solid #ddd;list-style-type:none;font-size:85%;font-weight:450;line-height:35px;">Accept</li>
-                          <li  style="border-bottom:0.5px solid #ddd;list-style-type:none;font-size:85%;font-weight:450;line-height:35px;">Deliver</li>
-                          <li style="list-style-type:none;font-size:85%;font-weight:450;line-height:35px;">Cancel</li>
+                            <li id="gig-drop">Accept</li>
+                            <li  id="gig-drop">Deliver</li>
+                            <li id="gig-drop1">Cancel</li>
                         
                         </div>
                  </div>
